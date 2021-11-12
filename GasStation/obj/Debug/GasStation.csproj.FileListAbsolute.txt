@@ -1,0 +1,12 @@
+C:\Users\Redmi\source\repos\GasStation\GasStation\bin\Debug\GasStation.exe.config
+C:\Users\Redmi\source\repos\GasStation\GasStation\bin\Debug\GasStation.exe
+C:\Users\Redmi\source\repos\GasStation\GasStation\bin\Debug\GasStation.pdb
+C:\Users\Redmi\source\repos\GasStation\GasStation\obj\Debug\GasStation.csprojAssemblyReference.cache
+C:\Users\Redmi\source\repos\GasStation\GasStation\obj\Debug\GasStation.MainPage.resources
+C:\Users\Redmi\source\repos\GasStation\GasStation\obj\Debug\GasStation.Properties.Resources.resources
+C:\Users\Redmi\source\repos\GasStation\GasStation\obj\Debug\GasStation.csproj.GenerateResource.cache
+C:\Users\Redmi\source\repos\GasStation\GasStation\obj\Debug\GasStation.csproj.CoreCompileInputs.cache
+C:\Users\Redmi\source\repos\GasStation\GasStation\obj\Debug\GasStation.exe
+C:\Users\Redmi\source\repos\GasStation\GasStation\obj\Debug\GasStation.pdb
+C:\Users\Redmi\source\repos\GasStation\GasStation\obj\Debug\GasStation.CashReceipt.resources
+C:\Users\Redmi\source\repos\GasStation\GasStation\obj\Debug\GasStation.Refueling.resources
