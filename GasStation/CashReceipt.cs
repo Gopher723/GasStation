@@ -61,5 +61,11 @@ namespace GasStation
             smtp.Send(m);
             MessageBox.Show("Чек был отправлен на указанный вами e-mail.");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AdditionalProducts frm = new AdditionalProducts();
+            frm.ShowDialog();
+        }
     }
 }

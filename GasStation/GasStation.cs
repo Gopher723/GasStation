@@ -19,5 +19,6 @@ namespace GasStation
         static public string SelectedGasType = "";
         static public double Price = 0;
         static public string Mail = "";
+        static public double DopPrice = 0;
     }
 }

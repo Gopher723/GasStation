@@ -23,3 +23,17 @@ C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.csproj.CoreCompileInpu
 C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.exe
 C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.pdb
 C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.EnteringMail.resources
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\bin\Debug\GasStation.exe.config
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\bin\Debug\GasStation.exe
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\bin\Debug\GasStation.pdb
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.csproj.AssemblyReference.cache
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.CashReceipt.resources
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.EnteringMail.resources
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.MainPage.resources
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.Properties.Resources.resources
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.Refueling.resources
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.csproj.GenerateResource.cache
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.exe
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.pdb
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.AdditionalProducts.resources

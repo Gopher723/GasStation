@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdditionalProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdditionalProducts.Designer.cs">
+      <DependentUpon>AdditionalProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="CashReceipt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="Refueling.Designer.cs">
       <DependentUpon>Refueling.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdditionalProducts.resx">
+      <DependentUpon>AdditionalProducts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CashReceipt.resx">
       <DependentUpon>CashReceipt.cs</DependentUpon>
     </EmbeddedResource>
