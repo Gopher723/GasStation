@@ -28,5 +28,10 @@ namespace GasStation
             Refueling frm = new Refueling();
             frm.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Тут будет окно с почтой");
+        }
     }
 }
