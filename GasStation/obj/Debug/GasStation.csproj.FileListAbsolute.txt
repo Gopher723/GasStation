@@ -22,3 +22,4 @@ C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.csproj.GenerateResourc
 C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.csproj.CoreCompileInputs.cache
 C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.exe
 C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.pdb
+C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.EnteringMail.resources

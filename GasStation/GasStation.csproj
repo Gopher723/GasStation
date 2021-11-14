@@ -52,6 +52,12 @@
     <Compile Include="CashReceipt.Designer.cs">
       <DependentUpon>CashReceipt.cs</DependentUpon>
     </Compile>
+    <Compile Include="EnteringMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnteringMail.Designer.cs">
+      <DependentUpon>EnteringMail.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     </Compile>
     <EmbeddedResource Include="CashReceipt.resx">
       <DependentUpon>CashReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnteringMail.resx">
+      <DependentUpon>EnteringMail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
