@@ -41,3 +41,4 @@ C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.AdditionalProducts.res
 C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.UserSelection.resources
 C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.Authentication.resources
 C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.Log.resources
+C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.csproj.ResolveComReference.cache

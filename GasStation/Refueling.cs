@@ -56,27 +56,23 @@ namespace GasStation
         {
             MessageBox.Show("Спасибо за покупку!");
 
+            GasStation.AllPrice += GasStation.Price;
+
             string writePath = @"log.txt";
 
             try
             {
-
                 using (StreamWriter sw = new StreamWriter(writePath, true, System.Text.Encoding.Default))
-                {
-                    sw.WriteLine($"Сумма оплаты: {GasStation.Price} ₽");
-                    //label6.Text = GasStation.Price.ToString() + " ₽";
-                    //label4.Text = GasStation.SelectedGasType.ToString();
-                    //label5.Text = GasStation.AmountOfGasoline.ToString();
-                    //label8.Text = DateTime.Now.ToString();
+                {                                        
+                    sw.WriteLine($"Тип топлива:  {GasStation.SelectedGasType} \nКоличество литров: {GasStation.AmountOfGasoline} \nСумма к оплате: {GasStation.Price}  Руб. \nДата покупки: {GasStation.date}\nВыручка: {GasStation.AllPrice} Руб.");
+                    sw.WriteLine("---------------------------");               
                 }
-                Console.WriteLine("Запись выполнена");
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
+            this.Close();
         }
-
-
     }
 }

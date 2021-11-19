@@ -64,6 +64,7 @@ namespace GasStation
 
         private void button2_Click(object sender, EventArgs e)
         {
+            GasStation.date = DateTime.Parse(label8.Text);
             AdditionalProducts frm = new AdditionalProducts();
             frm.ShowDialog();
         }

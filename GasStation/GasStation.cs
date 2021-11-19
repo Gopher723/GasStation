@@ -22,6 +22,8 @@ namespace GasStation
         static public string Mail = "";
         static public double DopPrice = 0;
         static public string Hash = "a49bd5aeeb94ae40198993992f8a7f93";
+        static public double AllPrice = 0;
+        static public DateTime date = DateTime.Now;
 
         public static string GetHashString(string s)
         {
