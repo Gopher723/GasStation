@@ -52,6 +52,12 @@
     <Compile Include="AdditionalProducts.Designer.cs">
       <DependentUpon>AdditionalProducts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Authentication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication.Designer.cs">
+      <DependentUpon>Authentication.cs</DependentUpon>
+    </Compile>
     <Compile Include="CashReceipt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
     </Compile>
     <Compile Include="EnteringMail.Designer.cs">
       <DependentUpon>EnteringMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log.Designer.cs">
+      <DependentUpon>Log.cs</DependentUpon>
     </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
@@ -79,14 +91,26 @@
     <Compile Include="Refueling.Designer.cs">
       <DependentUpon>Refueling.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSelection.Designer.cs">
+      <DependentUpon>UserSelection.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdditionalProducts.resx">
       <DependentUpon>AdditionalProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentication.resx">
+      <DependentUpon>Authentication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CashReceipt.resx">
       <DependentUpon>CashReceipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EnteringMail.resx">
       <DependentUpon>EnteringMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log.resx">
+      <DependentUpon>Log.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
@@ -102,6 +126,9 @@
     </Compile>
     <EmbeddedResource Include="Refueling.resx">
       <DependentUpon>Refueling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSelection.resx">
+      <DependentUpon>UserSelection.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

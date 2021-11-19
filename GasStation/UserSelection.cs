@@ -10,20 +10,25 @@ using System.Windows.Forms;
 
 namespace GasStation
 {
-    public partial class EnteringMail : Form
+    public partial class UserSelection : Form
     {
-        public EnteringMail()
+        public UserSelection()
         {
             InitializeComponent();
-            //pictureBox1.SendToBack();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            GasStation.Mail = textBox1.Text;
-            this.Close();
+            MainPage frm = new MainPage();
+            frm.Show();
+            //this.Close();
         }
 
-       
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Authentication frma = new Authentication();
+            frma.Show();
+            //this.Close();
+        }
     }
 }

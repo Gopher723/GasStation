@@ -19,9 +19,7 @@ namespace GasStation
             numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
 
         }
-
-        
-
+       
         double price = 0;
         private void button1_Click(object sender, EventArgs e)
         {

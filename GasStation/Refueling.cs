@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace GasStation
 {
@@ -53,6 +55,28 @@ namespace GasStation
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Спасибо за покупку!");
+
+            string writePath = @"log.txt";
+
+            try
+            {
+
+                using (StreamWriter sw = new StreamWriter(writePath, true, System.Text.Encoding.Default))
+                {
+                    sw.WriteLine($"Сумма оплаты: {GasStation.Price} ₽");
+                    //label6.Text = GasStation.Price.ToString() + " ₽";
+                    //label4.Text = GasStation.SelectedGasType.ToString();
+                    //label5.Text = GasStation.AmountOfGasoline.ToString();
+                    //label8.Text = DateTime.Now.ToString();
+                }
+                Console.WriteLine("Запись выполнена");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
+
+
     }
 }

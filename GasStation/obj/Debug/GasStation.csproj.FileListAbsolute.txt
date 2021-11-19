@@ -37,3 +37,7 @@ C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.csproj
 C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.exe
 C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.pdb
 C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.AdditionalProducts.resources
+C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.AdditionalProducts.resources
+C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.UserSelection.resources
+C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.Authentication.resources
+C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.Log.resources
