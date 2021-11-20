@@ -9,14 +9,14 @@ namespace GasStation
         public Refueling()
         {
             InitializeComponent();
-            label2.Text += " " + GasStation.AmountOfGasoline + " литров.";
+            label2.Text += " " + GasStation.AmountOfGasoline + " л.";
             progressBar1.Maximum = (int)GasStation.AmountOfGasoline;
         }
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             progressBar1.PerformStep();
-            label2.Text = "Осталось залить: " + --GasStation.AmountOfGasoline + " литров.";
-            label3.Text = "Залито: " + ++GasStation.LoadedGasoline + " литров.";
+            label2.Text = "Осталось залить: " + --GasStation.AmountOfGasoline + " л.";
+            label3.Text = "Залито: " + ++GasStation.LoadedGasoline + " л.";
             if (progressBar1.Value == progressBar1.Maximum)
             {
                 timer1.Stop();
@@ -52,7 +52,7 @@ namespace GasStation
                 using (StreamWriter sw = new StreamWriter(writePath, true, System.Text.Encoding.Default))
                 {                                        
                     sw.WriteLine($"Тип топлива:  {GasStation.SelectedGasType} \nКоличество литров: {GasStation.AmountOfGasoline} \nСумма к оплате: {GasStation.Price}  Руб. \nДата покупки: {GasStation.date}\nВыручка: {GasStation.AllPrice} Руб.");
-                    sw.WriteLine("---------------------------");               
+                    sw.WriteLine("----------------------------------");               
                 }
             }
             catch (Exception ex)

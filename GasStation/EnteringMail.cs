@@ -12,9 +12,9 @@ namespace GasStation
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            GasStation.Mail = textBox1.Text;
-            this.Close();
+        {                        
+                GasStation.Mail = textBox1.Text;
+                this.Close();            
         }
 
        

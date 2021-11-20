@@ -83,6 +83,7 @@ namespace GasStation
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            GasStation.DopPrice = price1 + price2 + price3;
             this.Close();
         }
     }

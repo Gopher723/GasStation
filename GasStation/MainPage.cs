@@ -33,15 +33,31 @@ namespace GasStation
             double answer = price * Convert.ToInt32(numericUpDown1.Value);
             label6.Text = answer.ToString() + " ₽";
         }
+        
         private void button3_Click(object sender, EventArgs e)
         {
-            GasStation.SelectedGasType = GasStation.GasTypes.FirstOrDefault(x => x.Value == price).Key; ;
-            GasStation.AmountOfGasoline = (double)numericUpDown1.Value;
-            GasStation.Price = price * Convert.ToInt32(numericUpDown1.Value);
-                     
-            CashReceipt frm = new CashReceipt();
-            frm.Show();
-            this.Close();
+            
+            try
+            {
+                GasStation.SelectedGasType = GasStation.GasTypes.FirstOrDefault(x => x.Value == price).Key; ;
+                GasStation.AmountOfGasoline = (double)numericUpDown1.Value;
+                GasStation.Price = price * Convert.ToInt32(numericUpDown1.Value);
+                if (GasStation.AmountOfGasoline == 0)
+                {
+                    throw new ArgumentException();
+                }
+                CashReceipt frm = new CashReceipt();
+                frm.Show();
+                this.Close();
+            }
+            catch (ArgumentException argEx)
+            {
+                MessageBox.Show("Введите количсетво литров!");
+            }
+            catch
+            {
+                MessageBox.Show("Выберите колонку/тип топлива!");
+            }            
         }
         private void button4_Click(object sender, EventArgs e)
         {

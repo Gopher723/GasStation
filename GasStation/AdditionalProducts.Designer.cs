@@ -94,6 +94,7 @@ namespace GasStation
             // numericUpDown1
             // 
             this.numericUpDown1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.numericUpDown1.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.numericUpDown1.Location = new System.Drawing.Point(207, 66);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(33, 20);
@@ -114,7 +115,7 @@ namespace GasStation
             // 
             // comboBox1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Капучино",
@@ -122,7 +123,7 @@ namespace GasStation
             "Американо"});
             this.comboBox1.Location = new System.Drawing.Point(100, 23);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(140, 27);
+            this.comboBox1.Size = new System.Drawing.Size(140, 28);
             this.comboBox1.TabIndex = 9;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -139,7 +140,7 @@ namespace GasStation
             // 
             // comboBox2
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Со сгущенкой",
@@ -147,7 +148,7 @@ namespace GasStation
             "С шоколадом"});
             this.comboBox2.Location = new System.Drawing.Point(100, 116);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(140, 27);
+            this.comboBox2.Size = new System.Drawing.Size(140, 28);
             this.comboBox2.TabIndex = 11;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -166,6 +167,7 @@ namespace GasStation
             // numericUpDown2
             // 
             this.numericUpDown2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.numericUpDown2.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.numericUpDown2.Location = new System.Drawing.Point(205, 156);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(33, 20);
@@ -175,6 +177,7 @@ namespace GasStation
             // numericUpDown3
             // 
             this.numericUpDown3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.numericUpDown3.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.numericUpDown3.Location = new System.Drawing.Point(205, 247);
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(33, 20);
@@ -195,7 +198,7 @@ namespace GasStation
             // 
             // comboBox3
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Чизбургер",
@@ -203,7 +206,7 @@ namespace GasStation
             "Гамбургер"});
             this.comboBox3.Location = new System.Drawing.Point(100, 210);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(138, 27);
+            this.comboBox3.Size = new System.Drawing.Size(138, 28);
             this.comboBox3.TabIndex = 18;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
