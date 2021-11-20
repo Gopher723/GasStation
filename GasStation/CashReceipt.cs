@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GasStation
@@ -17,23 +10,20 @@ namespace GasStation
         public CashReceipt()
         {
             InitializeComponent();
-            label6.Text = GasStation.Price.ToString() + " ₽";
+            label6.Text = GasStation.Price + " ₽";
             label4.Text = GasStation.SelectedGasType.ToString();
             label5.Text = GasStation.AmountOfGasoline.ToString();
-            label8.Text = DateTime.Now.ToString();
-            
+            label8.Text = DateTime.Now.ToString();            
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            GasStation.date = DateTime.Parse(label8.Text);
             this.Close();
             Refueling frm = new Refueling();
             frm.Show();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
-
             EnteringMail frm = new EnteringMail();
             frm.ShowDialog();
 
@@ -61,12 +51,13 @@ namespace GasStation
             smtp.Send(m);
             MessageBox.Show("Чек был отправлен на указанный вами e-mail.");
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            GasStation.date = DateTime.Parse(label8.Text);
+            this.Hide();
             AdditionalProducts frm = new AdditionalProducts();
             frm.ShowDialog();
+            label6.Text = GasStation.Price + GasStation.DopPrice + " ₽";
+            this.Show();
         }
     }
 }

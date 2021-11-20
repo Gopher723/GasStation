@@ -42,3 +42,8 @@ C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.UserSelection.resource
 C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.Authentication.resources
 C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.Log.resources
 C:\Users\Redmi\GasStation\GasStation\obj\Debug\GasStation.csproj.ResolveComReference.cache
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.csproj.ResolveComReference.cache
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.Authentication.resources
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.Log.resources
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.UserSelection.resources
+C:\Users\Acer\Documents\GitHub\GasStation\GasStation\obj\Debug\Interop.WordAddin_RDLib.dll

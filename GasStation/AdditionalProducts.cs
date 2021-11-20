@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GasStation
@@ -16,7 +9,7 @@ namespace GasStation
         {
             InitializeComponent();
         }
-        double coffeePrice = 0, croissantPrice = 0, burgerPrice = 0;
+        double coffeePrice = 0, croissantPrice = 0, burgerPrice = 0, price1 = 0, price2 = 0, price3 = 0;
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
@@ -38,8 +31,8 @@ namespace GasStation
         }
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            GasStation.DopPrice += Convert.ToDouble(numericUpDown1.Value) * coffeePrice;
-            label8.Text = GasStation.DopPrice.ToString() + " ₽";
+            price1 = Convert.ToDouble(numericUpDown1.Value) * coffeePrice;
+            label8.Text = price1 + price2 + price3 + " ₽";
         }       
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -62,9 +55,9 @@ namespace GasStation
         }       
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
-            GasStation.DopPrice += Convert.ToDouble(numericUpDown2.Value) * croissantPrice;
-            label8.Text = GasStation.DopPrice.ToString() + " ₽";
-        }
+            price2 = Convert.ToDouble(numericUpDown2.Value) * croissantPrice;
+            label8.Text = price1 + price2 + price3 + " ₽";
+        }       
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (comboBox3.SelectedItem.ToString())
@@ -85,8 +78,12 @@ namespace GasStation
         }
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
-            GasStation.DopPrice += Convert.ToDouble(numericUpDown3.Value) * burgerPrice;
-            label8.Text = GasStation.DopPrice.ToString() + " ₽";
+            price3 = Convert.ToDouble(numericUpDown3.Value) * burgerPrice;
+            label8.Text = price1 + price2 + price3 + " ₽";
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

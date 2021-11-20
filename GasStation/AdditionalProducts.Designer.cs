@@ -47,6 +47,7 @@ namespace GasStation
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -60,10 +61,9 @@ namespace GasStation
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(40, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 15);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 111);
+            this.pictureBox1.Size = new System.Drawing.Size(67, 72);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -73,10 +73,9 @@ namespace GasStation
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(40, 163);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(27, 106);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 111);
+            this.pictureBox2.Size = new System.Drawing.Size(67, 72);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -85,10 +84,9 @@ namespace GasStation
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(40, 303);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(27, 197);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 111);
+            this.pictureBox3.Size = new System.Drawing.Size(67, 72);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -96,10 +94,9 @@ namespace GasStation
             // numericUpDown1
             // 
             this.numericUpDown1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.numericUpDown1.Location = new System.Drawing.Point(310, 102);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.numericUpDown1.Location = new System.Drawing.Point(207, 66);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(50, 26);
+            this.numericUpDown1.Size = new System.Drawing.Size(33, 20);
             this.numericUpDown1.TabIndex = 7;
             this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
@@ -109,10 +106,9 @@ namespace GasStation
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(146, 98);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(97, 64);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 29);
+            this.label3.Size = new System.Drawing.Size(104, 19);
             this.label3.TabIndex = 8;
             this.label3.Text = "Количество";
             // 
@@ -124,10 +120,9 @@ namespace GasStation
             "Капучино",
             "Латте",
             "Американо"});
-            this.comboBox1.Location = new System.Drawing.Point(150, 35);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(100, 23);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(208, 37);
+            this.comboBox1.Size = new System.Drawing.Size(140, 27);
             this.comboBox1.TabIndex = 9;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -137,10 +132,9 @@ namespace GasStation
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(375, 42);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(250, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 29);
+            this.label1.Size = new System.Drawing.Size(0, 19);
             this.label1.TabIndex = 10;
             // 
             // comboBox2
@@ -151,10 +145,9 @@ namespace GasStation
             "Со сгущенкой",
             "С кремом",
             "С шоколадом"});
-            this.comboBox2.Location = new System.Drawing.Point(150, 178);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox2.Location = new System.Drawing.Point(100, 116);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(208, 37);
+            this.comboBox2.Size = new System.Drawing.Size(140, 27);
             this.comboBox2.TabIndex = 11;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -164,30 +157,27 @@ namespace GasStation
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(150, 237);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(100, 154);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 29);
+            this.label2.Size = new System.Drawing.Size(104, 19);
             this.label2.TabIndex = 12;
             this.label2.Text = "Количество";
             // 
             // numericUpDown2
             // 
             this.numericUpDown2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.numericUpDown2.Location = new System.Drawing.Point(308, 240);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.numericUpDown2.Location = new System.Drawing.Point(205, 156);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(50, 26);
+            this.numericUpDown2.Size = new System.Drawing.Size(33, 20);
             this.numericUpDown2.TabIndex = 13;
             this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
             // numericUpDown3
             // 
             this.numericUpDown3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.numericUpDown3.Location = new System.Drawing.Point(308, 380);
-            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.numericUpDown3.Location = new System.Drawing.Point(205, 247);
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(50, 26);
+            this.numericUpDown3.Size = new System.Drawing.Size(33, 20);
             this.numericUpDown3.TabIndex = 16;
             this.numericUpDown3.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
             // 
@@ -197,10 +187,9 @@ namespace GasStation
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(150, 377);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(100, 245);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 29);
+            this.label4.Size = new System.Drawing.Size(104, 19);
             this.label4.TabIndex = 17;
             this.label4.Text = "Количество";
             // 
@@ -212,10 +201,9 @@ namespace GasStation
             "Чизбургер",
             "Чикенбургер",
             "Гамбургер"});
-            this.comboBox3.Location = new System.Drawing.Point(150, 323);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox3.Location = new System.Drawing.Point(100, 210);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(205, 37);
+            this.comboBox3.Size = new System.Drawing.Size(138, 27);
             this.comboBox3.TabIndex = 18;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
@@ -225,10 +213,9 @@ namespace GasStation
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(375, 185);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(250, 120);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 29);
+            this.label5.Size = new System.Drawing.Size(0, 19);
             this.label5.TabIndex = 19;
             // 
             // label6
@@ -237,10 +224,9 @@ namespace GasStation
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(375, 331);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(250, 215);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 29);
+            this.label6.Size = new System.Drawing.Size(0, 19);
             this.label6.TabIndex = 20;
             // 
             // label7
@@ -249,10 +235,9 @@ namespace GasStation
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(338, 429);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(27, 295);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 29);
+            this.label7.Size = new System.Drawing.Size(67, 19);
             this.label7.TabIndex = 21;
             this.label7.Text = "Сумма:";
             // 
@@ -262,18 +247,30 @@ namespace GasStation
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(447, 429);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(111, 295);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 29);
+            this.label8.Size = new System.Drawing.Size(0, 19);
             this.label8.TabIndex = 22;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(273, 283);
+            this.button1.Margin = new System.Windows.Forms.Padding(100, 1000, 100, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 47);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Продолжить оплату";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AdditionalProducts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
-            this.ClientSize = new System.Drawing.Size(597, 489);
+            this.ClientSize = new System.Drawing.Size(385, 338);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -292,7 +289,6 @@ namespace GasStation
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AdditionalProducts";
             this.Text = "OilCity";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -325,5 +321,6 @@ namespace GasStation
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
     }
 }
