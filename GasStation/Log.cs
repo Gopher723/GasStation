@@ -11,6 +11,19 @@ namespace GasStation
         public Log()
         {
             InitializeComponent();
+            string writePath = @"log.txt";
+
+            try
+            {
+                using (StreamWriter sw = new StreamWriter(writePath, true, System.Text.Encoding.Default))
+                {
+                    sw.WriteLine($"Выручка: {GasStation.AllPrice} Руб.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }       
         private void button1_Click(object sender, EventArgs e)
         {
@@ -33,7 +46,14 @@ namespace GasStation
 
             File.Copy(@"log.pdf", destFilePath + ".pdf");
             File.Delete(@"log.pdf");
-            MessageBox.Show("Govno");
+            MessageBox.Show("Файл сохранен!");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            UserSelection frm = new UserSelection();
+            frm.Show();
         }
     }
 }

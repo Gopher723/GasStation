@@ -12,7 +12,7 @@ namespace GasStation
             InitializeComponent();
             numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
         }
-       
+
         double price = 0;
         private void button1_Click(object sender, EventArgs e)
         {
@@ -33,10 +33,10 @@ namespace GasStation
             double answer = price * Convert.ToInt32(numericUpDown1.Value);
             label6.Text = answer.ToString() + " ₽";
         }
-        
+
         private void button3_Click(object sender, EventArgs e)
         {
-            
+
             try
             {
                 GasStation.SelectedGasType = GasStation.GasTypes.FirstOrDefault(x => x.Value == price).Key; ;
@@ -57,8 +57,9 @@ namespace GasStation
             catch
             {
                 MessageBox.Show("Выберите колонку/тип топлива!");
-            }            
+            }
         }
+
         private void button4_Click(object sender, EventArgs e)
         {
             button4.BackColor = Color.GreenYellow;
@@ -67,6 +68,7 @@ namespace GasStation
             button7.BackColor = Color.White;
             button8.BackColor = Color.White;
             button9.BackColor = Color.White;
+            GasStation.SelectedPetrolPump = Convert.ToInt32(button4.Text);
         }
         private void button5_Click(object sender, EventArgs e)
         {
@@ -76,6 +78,7 @@ namespace GasStation
             button7.BackColor = Color.White;
             button8.BackColor = Color.White;
             button9.BackColor = Color.White;
+            GasStation.SelectedPetrolPump = Convert.ToInt32(button5.Text);
         }
         private void button6_Click(object sender, EventArgs e)
         {
@@ -85,6 +88,7 @@ namespace GasStation
             button7.BackColor = Color.White;
             button8.BackColor = Color.White;
             button9.BackColor = Color.White;
+            GasStation.SelectedPetrolPump = Convert.ToInt32(button6.Text);
         }
         private void button7_Click(object sender, EventArgs e)
         {
@@ -94,6 +98,7 @@ namespace GasStation
             button7.BackColor = Color.GreenYellow;
             button8.BackColor = Color.White;
             button9.BackColor = Color.White;
+            GasStation.SelectedPetrolPump = Convert.ToInt32(button7.Text);
         }
         private void button8_Click(object sender, EventArgs e)
         {
@@ -103,6 +108,7 @@ namespace GasStation
             button7.BackColor = Color.White;
             button8.BackColor = Color.GreenYellow;
             button9.BackColor = Color.White;
+            GasStation.SelectedPetrolPump = Convert.ToInt32(button8.Text);
         }
         private void button9_Click(object sender, EventArgs e)
         {
@@ -112,6 +118,7 @@ namespace GasStation
             button7.BackColor = Color.White;
             button8.BackColor = Color.White;
             button9.BackColor = Color.GreenYellow;
+            GasStation.SelectedPetrolPump = Convert.ToInt32(button9.Text);
         }
     }
 }

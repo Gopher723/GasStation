@@ -6,9 +6,10 @@ namespace GasStation
 {
     public partial class Refueling : Form
     {
+        //double kol = GasStation.AmountOfGasoline;
         public Refueling()
         {
-            InitializeComponent();
+            InitializeComponent();            
             label2.Text += " " + GasStation.AmountOfGasoline + " л.";
             progressBar1.Maximum = (int)GasStation.AmountOfGasoline;
         }
@@ -46,12 +47,13 @@ namespace GasStation
             GasStation.AllPrice += GasStation.Price;
 
             string writePath = @"log.txt";
-
+            GasStation.receiptNumber++;
             try
             {
                 using (StreamWriter sw = new StreamWriter(writePath, true, System.Text.Encoding.Default))
-                {                                        
-                    sw.WriteLine($"Тип топлива:  {GasStation.SelectedGasType} \nКоличество литров: {GasStation.AmountOfGasoline} \nСумма к оплате: {GasStation.Price}  Руб. \nДата покупки: {GasStation.date}\nВыручка: {GasStation.AllPrice} Руб.");
+                {
+                    sw.WriteLine($"Чек № {GasStation.receiptNumber}");
+                    sw.WriteLine($"Тип топлива:  {GasStation.SelectedGasType} \nКоличество литров: {GasStation.AmountOfGasoline} \nНомер ТРК: {GasStation.SelectedPetrolPump} \nСумма к оплате: {GasStation.Price}  Руб. \nДата покупки: {GasStation.date}");
                     sw.WriteLine("----------------------------------");               
                 }
             }
@@ -60,6 +62,8 @@ namespace GasStation
                 Console.WriteLine(ex.Message);
             }
             this.Close();
+            UserSelection frm = new UserSelection();
+            frm.Show();
         }
     }
 }

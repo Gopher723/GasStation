@@ -15,6 +15,7 @@ namespace GasStation
             label5.Text = GasStation.AmountOfGasoline.ToString();
             label8.Text = DateTime.Now.ToString(); 
             labelOilPrice.Text = GasStation.Price + " ₽";
+            label13.Text = GasStation.SelectedPetrolPump.ToString();
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -44,6 +45,7 @@ namespace GasStation
                 {
                     m.Body = $"Тип топлива: {label4.Text} ₽ " +
                          $"<br> Количество литров: {label5.Text} " +
+                         $"<br> Номер ТРК: {label13.Text}" +
                          $"<br> Дата покупки: {label8.Text} " +
                          $"<br> Топливо на сумму: {labelOilPrice.Text}" +
                          $"<br> {label9.Text} {labelDopPrice.Text}" +
@@ -54,6 +56,7 @@ namespace GasStation
                 {
                     m.Body = $"Тип топлива: {label4.Text} ₽ " +
                         $"<br> Количество литров: {label5.Text} " +
+                        $"<br> Номер ТРК: {label13.Text}" +
                         $"<br> Дата покупки: {label8.Text} " +
                         $"<br> Топливо на сумму: {labelOilPrice.Text}" +
                         $"<br> -------------------------------------" +

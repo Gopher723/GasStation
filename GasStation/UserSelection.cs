@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace GasStation
@@ -13,13 +14,19 @@ namespace GasStation
         {
             MainPage frm = new MainPage();
             frm.Show();
-            //this.Close();
+            this.Hide();
         }
         private void button2_Click(object sender, EventArgs e)
         {
             Authentication frma = new Authentication();
             frma.Show();
-            //this.Close();
+            this.Hide();
+        }
+
+        private void UserSelection_FormClosing(object sender, FormClosingEventArgs e)
+        {            
+            File.Delete("log.txt");
+            MessageBox.Show("Goodbye!");
         }
     }
 }
