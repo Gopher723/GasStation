@@ -12,11 +12,20 @@ namespace GasStation
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {                        
+        {
+            try
+            {
+                if (GasStation.Mail == "")
+                {
+                   throw new ArgumentException();
+                }
                 GasStation.Mail = textBox1.Text;
-                this.Close();            
-        }
-
-       
+                this.Close();
+            }
+            catch (ArgumentException argEx)
+            {
+                MessageBox.Show("Неверный формат e-mail адреса!");
+            }            
+        }       
     }
 }

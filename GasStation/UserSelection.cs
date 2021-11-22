@@ -14,13 +14,13 @@ namespace GasStation
         {
             MainPage frm = new MainPage();
             frm.Show();
-            this.Hide();
+            //this.Hide();
         }
         private void button2_Click(object sender, EventArgs e)
         {
             Authentication frma = new Authentication();
             frma.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void UserSelection_FormClosing(object sender, FormClosingEventArgs e)

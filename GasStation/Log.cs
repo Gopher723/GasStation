@@ -46,14 +46,13 @@ namespace GasStation
 
             File.Copy(@"log.pdf", destFilePath + ".pdf");
             File.Delete(@"log.pdf");
-            MessageBox.Show("Файл сохранен!");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
-            UserSelection frm = new UserSelection();
-            frm.Show();
+            //UserSelection frm = new UserSelection();
+            //frm.Show();
         }
     }
 }

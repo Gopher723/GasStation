@@ -29,8 +29,7 @@ namespace GasStation
             try
             {
                 EnteringMail frm = new EnteringMail();
-                frm.ShowDialog();
-
+                frm.ShowDialog();                
                 // отправитель - устанавливаем адрес и отображаемое в письме имя
                 MailAddress from = new MailAddress("oil.city723@gmail.com", "OilCity");
                 // кому отправляем
@@ -72,8 +71,8 @@ namespace GasStation
                 smtp.EnableSsl = true;
                 smtp.Send(m);
                 MessageBox.Show("Чек был отправлен на указанный вами e-mail.");
-            }
-            catch(Exception ex)
+            }            
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }

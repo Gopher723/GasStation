@@ -42,28 +42,40 @@ namespace GasStation
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Спасибо за покупку!");
-
-            GasStation.AllPrice += GasStation.Price;
-
-            string writePath = @"log.txt";
-            GasStation.receiptNumber++;
             try
             {
+                if(GasStation.AmountOfGasoline != 0)
+                {
+                    throw new ArgumentException();
+                }
+                MessageBox.Show("Спасибо за покупку!");
+
+                GasStation.AllPrice += GasStation.Price;
+
+                string writePath = @"log.txt";
+                GasStation.receiptNumber++;
+                
                 using (StreamWriter sw = new StreamWriter(writePath, true, System.Text.Encoding.Default))
                 {
                     sw.WriteLine($"Чек № {GasStation.receiptNumber}");
-                    sw.WriteLine($"Тип топлива:  {GasStation.SelectedGasType} \nКоличество литров: {GasStation.AmountOfGasoline} \nНомер ТРК: {GasStation.SelectedPetrolPump} \nСумма к оплате: {GasStation.Price}  Руб. \nДата покупки: {GasStation.date}");
-                    sw.WriteLine("----------------------------------");               
+                    sw.WriteLine($"Тип топлива:  {GasStation.SelectedGasType} \nКоличество литров: {GasStation.LoadedGasoline} \nНомер ТРК: {GasStation.SelectedPetrolPump} \nСумма к оплате: {GasStation.Price}  Руб. \nДата покупки: {GasStation.date}");
+                    sw.WriteLine("----------------------------------");
                 }
+                                
+                this.Close();
+                //UserSelection frm = new UserSelection();
+                //frm.Show();
+            }
+            catch(ArgumentException arg)
+            {
+                MessageBox.Show("Топливо не залито!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }
-            this.Close();
-            UserSelection frm = new UserSelection();
-            frm.Show();
+            
+            
         }
     }
 }
