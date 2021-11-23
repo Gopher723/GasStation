@@ -68,11 +68,11 @@ namespace GasStation
             }
             catch(ArgumentException arg)
             {
-                MessageBox.Show("Топливо не залито!");
+                MessageBox.Show("Топливо не залито!", "OilCity");
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "OilCity");
             }
             
             

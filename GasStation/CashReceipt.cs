@@ -70,7 +70,7 @@ namespace GasStation
                 smtp.Credentials = new NetworkCredential("oil.city723@gmail.com", "GasStation723");
                 smtp.EnableSsl = true;
                 smtp.Send(m);
-                MessageBox.Show("Чек был отправлен на указанный вами e-mail.");
+                MessageBox.Show("Чек был отправлен на указанный вами e-mail.", "OilCity", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }            
             catch (Exception ex)
             {

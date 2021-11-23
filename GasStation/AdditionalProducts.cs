@@ -12,7 +12,7 @@ namespace GasStation
         double coffeePrice = 0, croissantPrice = 0, burgerPrice = 0, price1 = 0, price2 = 0, price3 = 0;
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
             switch (comboBox1.SelectedItem.ToString())
             {
                 case "Латте":
@@ -33,7 +33,7 @@ namespace GasStation
         {
             price1 = Convert.ToDouble(numericUpDown1.Value) * coffeePrice;
             label8.Text = price1 + price2 + price3 + " ₽";
-        }       
+        }
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -52,12 +52,12 @@ namespace GasStation
                     croissantPrice = 50;
                     break;
             }
-        }       
+        }
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
             price2 = Convert.ToDouble(numericUpDown2.Value) * croissantPrice;
             label8.Text = price1 + price2 + price3 + " ₽";
-        }       
+        }
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (comboBox3.SelectedItem.ToString())
@@ -86,5 +86,9 @@ namespace GasStation
             GasStation.DopPrice = price1 + price2 + price3;
             this.Close();
         }
-    }
+    }    
 }
+        
+
+    
+

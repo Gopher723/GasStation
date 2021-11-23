@@ -24,7 +24,7 @@ namespace GasStation
             }
             catch (ArgumentException argEx)
             {
-                MessageBox.Show("Неверный формат e-mail адреса!");
+                MessageBox.Show("Неверный формат e-mail адреса!", "OilCity");
             }            
         }       
     }

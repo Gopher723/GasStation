@@ -25,8 +25,17 @@ namespace GasStation
 
         private void UserSelection_FormClosing(object sender, FormClosingEventArgs e)
         {            
-            File.Delete("log.txt");
-            MessageBox.Show("Goodbye!");
+           
+            var result = MessageBox.Show("Вы действительно хотите закрыть программу?", "OilCity", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result != DialogResult.Yes)
+            {
+                e.Cancel = true;
+                File.Delete("log.txt");
+            }
+            else
+            {
+                e.Cancel = false;
+            }
         }
     }
 }

@@ -52,11 +52,11 @@ namespace GasStation
             }
             catch (ArgumentException argEx)
             {
-                MessageBox.Show("Введите количсетво литров!");
+                MessageBox.Show("Введите количество литров!", "OilCity");
             }
             catch
             {
-                MessageBox.Show("Выберите колонку/тип топлива!");
+                MessageBox.Show("Выберите колонку/тип топлива!", "OilCity");
             }
         }
 

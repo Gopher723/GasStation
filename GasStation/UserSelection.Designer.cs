@@ -78,6 +78,7 @@
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserSelection";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OilCity";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserSelection_FormClosing);
             this.ResumeLayout(false);

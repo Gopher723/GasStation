@@ -11,18 +11,25 @@ namespace GasStation
         }
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            string hash = GasStation.GetHashString(textBox1.Text);
+            try
+            {
+                string hash = GasStation.GetHashString(textBox1.Text);
 
-            if(hash == GasStation.Hash)
-            {
-                Log frm = new Log();
-                frm.Show();
-                this.Close();
+                if (hash == GasStation.Hash)
+                {
+                    Log frm = new Log();
+                    frm.Show();
+                    this.Close();
+                }
+                else
+                {
+                    textBox1.Clear();
+                    throw new ArgumentException();
+                }
             }
-            else
+            catch(ArgumentException arg)
             {
-                textBox1.Clear();
-                MessageBox.Show("Неверный код!");
+                MessageBox.Show("Неверный код!", "OilCity");
             }
         }
     }

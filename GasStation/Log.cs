@@ -45,10 +45,11 @@ namespace GasStation
 
                 File.Copy(@"log.pdf", destFilePath + ".pdf");
                 File.Delete(@"log.pdf");
+                MessageBox.Show("Файл сохранен.", "OilCity", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message, "OilCity");
             }
         }
         private void button3_Click(object sender, EventArgs e)
