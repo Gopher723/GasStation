@@ -27,14 +27,15 @@ namespace GasStation
         {            
            
             var result = MessageBox.Show("Вы действительно хотите закрыть программу?", "OilCity", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result != DialogResult.Yes)
+            if (result == DialogResult.Yes)
             {
-                e.Cancel = true;
+                
                 File.Delete("log.txt");
+                e.Cancel = false;
             }
             else
             {
-                e.Cancel = false;
+                e.Cancel = true;
             }
         }
     }
