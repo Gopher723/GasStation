@@ -14,12 +14,12 @@ namespace GasStation
         private void button1_Click(object sender, EventArgs e)
         {
             try
-            {
+            {                
+                GasStation.Mail = textBox1.Text;
                 if (GasStation.Mail == "")
                 {
-                   throw new ArgumentException();
+                    throw new ArgumentException();
                 }
-                GasStation.Mail = textBox1.Text;
                 this.Close();
             }
             catch (ArgumentException argEx)

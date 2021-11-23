@@ -49,7 +49,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(196, 32);
+            this.button2.Location = new System.Drawing.Point(240, 32);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(118, 80);
             this.button2.TabIndex = 2;
@@ -62,14 +62,14 @@
             this.richTextBox1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox1.Location = new System.Drawing.Point(52, 151);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(404, 229);
+            this.richTextBox1.Size = new System.Drawing.Size(502, 229);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(338, 32);
+            this.button3.Location = new System.Drawing.Point(437, 32);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(117, 80);
             this.button3.TabIndex = 4;
@@ -82,7 +82,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
-            this.ClientSize = new System.Drawing.Size(510, 446);
+            this.ClientSize = new System.Drawing.Size(606, 446);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button2);

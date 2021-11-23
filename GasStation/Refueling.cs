@@ -50,7 +50,7 @@ namespace GasStation
                 }
                 MessageBox.Show("Спасибо за покупку!");
 
-                GasStation.AllPrice += GasStation.Price;
+                GasStation.AllPrice += GasStation.Price + GasStation.DopPrice;
 
                 string writePath = @"log.txt";
                 GasStation.receiptNumber++;
@@ -58,7 +58,7 @@ namespace GasStation
                 using (StreamWriter sw = new StreamWriter(writePath, true, System.Text.Encoding.Default))
                 {
                     sw.WriteLine($"Чек № {GasStation.receiptNumber}");
-                    sw.WriteLine($"Тип топлива:  {GasStation.SelectedGasType} \nКоличество литров: {GasStation.LoadedGasoline} \nНомер ТРК: {GasStation.SelectedPetrolPump} \nСумма к оплате: {GasStation.Price}  Руб. \nДата покупки: {GasStation.date}");
+                    sw.WriteLine($"Тип топлива:  {GasStation.SelectedGasType} \nКоличество литров: {GasStation.LoadedGasoline} \nНомер ТРК: {GasStation.SelectedPetrolPump} \nСумма к оплате: {GasStation.Price + GasStation.DopPrice}  Руб. \nДата покупки: {GasStation.date}");
                     sw.WriteLine("----------------------------------");
                 }
                                 
