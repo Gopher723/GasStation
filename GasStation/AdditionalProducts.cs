@@ -8,11 +8,13 @@ namespace GasStation
         public AdditionalProducts()
         {
             InitializeComponent();
+            numericUpDown1.Visible = false;
+            numericUpDown2.Visible = false;
+            numericUpDown3.Visible = false;
         }
         double coffeePrice = 0, croissantPrice = 0, burgerPrice = 0, price1 = 0, price2 = 0, price3 = 0;
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             switch (comboBox1.SelectedItem.ToString())
             {
                 case "Латте":
@@ -28,6 +30,7 @@ namespace GasStation
                     coffeePrice = 120;
                     break;
             }
+            numericUpDown1.Visible = true;
         }
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
@@ -36,7 +39,6 @@ namespace GasStation
         }
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             switch (comboBox2.SelectedItem.ToString())
             {
                 case "Со сгущенкой":
@@ -52,6 +54,7 @@ namespace GasStation
                     croissantPrice = 50;
                     break;
             }
+            numericUpDown2.Visible = true;
         }
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
@@ -75,6 +78,7 @@ namespace GasStation
                     burgerPrice = 130;
                     break;
             }
+            numericUpDown3.Visible = true;
         }
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
@@ -83,7 +87,7 @@ namespace GasStation
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            GasStation.DopPrice = price1 + price2 + price3;
+            GasStation.DopPrice += price1 + price2 + price3;
             this.Close();
         }
     }    

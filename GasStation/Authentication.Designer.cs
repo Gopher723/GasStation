@@ -70,11 +70,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
-            this.ClientSize = new System.Drawing.Size(336, 208);
+            this.ClientSize = new System.Drawing.Size(333, 202);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(355, 258);
+            this.MinimumSize = new System.Drawing.Size(355, 258);
             this.Name = "Authentication";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OilCity";

@@ -10,23 +10,30 @@ namespace GasStation
         public MainPage()
         {
             InitializeComponent();
+            numericUpDown1.Visible = false;
             numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
         }
 
         double price = 0;
         private void button1_Click(object sender, EventArgs e)
         {
+            numericUpDown1.Visible = true;
             label7.Text = GasStation.GasTypes["АИ-92"] + " ₽";
             price = GasStation.GasTypes["АИ-92"];
             button2.BackColor = Color.White;
             button1.BackColor = Color.GreenYellow;
+            double answer = price * Convert.ToInt32(numericUpDown1.Value);
+            label6.Text = answer.ToString() + " ₽";
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            numericUpDown1.Visible = true;
             label7.Text = GasStation.GasTypes["АИ-95"] + " ₽";
             price = GasStation.GasTypes["АИ-95"];
             button1.BackColor = Color.White;
             button2.BackColor = Color.GreenYellow;
+            double answer = price * Convert.ToInt32(numericUpDown1.Value);
+            label6.Text = answer.ToString() + " ₽";
         }
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
