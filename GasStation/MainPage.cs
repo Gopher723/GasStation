@@ -53,15 +53,19 @@ namespace GasStation
                 {
                     throw new ArgumentException();
                 }
+                if (GasStation.SelectedPetrolPump ==0)
+                {
+                    throw new Exception();
+                }
                 CashReceipt frm = new CashReceipt();
                 frm.Show();
                 this.Close();
             }
-            catch (ArgumentException argEx)
+            catch (ArgumentException)
             {
                 MessageBox.Show("Введите количество литров!", "OilCity");
             }
-            catch
+            catch(Exception)
             {
                 MessageBox.Show("Выберите колонку/тип топлива!", "OilCity");
             }

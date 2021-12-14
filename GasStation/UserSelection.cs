@@ -9,14 +9,23 @@ namespace GasStation
         public UserSelection()
         {
             InitializeComponent();
-
-            this.Width = Screen.PrimaryScreen.WorkingArea.Width / 2;
-            this.Height = Screen.PrimaryScreen.WorkingArea.Height / 2;
-            this.Top = (Screen.PrimaryScreen.WorkingArea.Top + Screen.PrimaryScreen.WorkingArea.Height) / 4;
-            this.Left = (Screen.PrimaryScreen.WorkingArea.Left + Screen.PrimaryScreen.WorkingArea.Width) / 4;
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            GasStation.AmountOfGasoline = 0; //количество литров
+            GasStation.SelectedPetrolPump = 0; //номер колонки
+            GasStation.LoadedGasoline = 0; //для залива топлива
+            GasStation.SelectedGasType = ""; //тип топлива
+            GasStation.Price = 0; //цена топлива
+            GasStation.Mail = ""; //почта пользователя
+            GasStation.DopPrice = 0; //цена за доп товары
+            GasStation.AllPrice = 0; //сумма покупки
+            GasStation.date = DateTime.Now; //дата покупки
+            GasStation.receiptNumber = 0; //номер чека
+            GasStation.Discount = 0; //процент скидки
+            GasStation.AmountDiscount = 0; //сумма скидки по карте
+            GasStation.AllPriceWithoutDiscount = 0; //конечная сумма без скидки
+
             MainPage frm = new MainPage();
             frm.Show();
             //this.Hide();

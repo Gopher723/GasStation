@@ -16,7 +16,9 @@ namespace GasStation
             label8.Text = DateTime.Now.ToString(); 
             labelOilPrice.Text = GasStation.Price + " ₽";
             label13.Text = GasStation.SelectedPetrolPump.ToString();
-            GasStation.AllPrice += GasStation.Price + GasStation.DopPrice;
+            GasStation.AllPrice = GasStation.Price;
+            GasStation.AllPriceWithoutDiscount = GasStation.Price;
+            labelAmountDiscount.Visible = false;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -43,24 +45,24 @@ namespace GasStation
                 // текст письма
                 if (GasStation.DopPrice != 0)
                 {
-                    m.Body = $"Тип топлива: {label4.Text} ₽ " +
-                         $"<br> Количество литров: {label5.Text} " +
+                    m.Body = $"Тип топлива: {label4.Text}" +
+                         $"<br> Количество литров: {label5.Text}" +
                          $"<br> Номер ТРК: {label13.Text}" +
                          $"<br> Дата покупки: {label8.Text} " +
-                         $"<br> Топливо на сумму: {labelOilPrice.Text}" +
-                         $"<br> {label9.Text} {labelDopPrice.Text}" +
+                         $"<br> Топливо на сумму: {labelOilPrice.Text} ₽" +
+                         $"<br> {label9.Text} {labelDopPrice.Text} ₽" +
                          $"<br> -------------------------------------" +
-                         $"<br> Итог к оплате: {label6.Text}";
+                         $"<br> Итог к оплате: {label6.Text} ₽";
                 }
                 else
                 {
-                    m.Body = $"Тип топлива: {label4.Text} ₽ " +
-                        $"<br> Количество литров: {label5.Text} " +
+                    m.Body = $"Тип топлива: {label4.Text}" +
+                        $"<br> Количество литров: {label5.Text}" +
                         $"<br> Номер ТРК: {label13.Text}" +
-                        $"<br> Дата покупки: {label8.Text} " +
-                        $"<br> Топливо на сумму: {labelOilPrice.Text}" +
+                        $"<br> Дата покупки: {label8.Text}" +
+                        $"<br> Топливо на сумму: {labelOilPrice.Text} ₽" +
                         $"<br> -------------------------------------" +
-                        $"<br> Итог к оплате: {label6.Text}";
+                        $"<br> Итог к оплате: {label6.Text} ₽";
                 }
 
                 // письмо представляет код html
@@ -88,8 +90,11 @@ namespace GasStation
                 label9.Text = "Доп. товары\nна сумму:";
                 labelDopPrice.Text = GasStation.DopPrice + " ₽";
             }
-            label6.Text = GasStation.Price + GasStation.DopPrice + " ₽";
-            GasStation.AllPrice += GasStation.Price + GasStation.DopPrice;
+            GasStation.AllPrice += GasStation.DopPrice;
+            GasStation.AllPriceWithoutDiscount += GasStation.DopPrice;
+            GasStation.AllPrice = GasStation.AllPriceWithoutDiscount - (GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100));            
+            label6.Text = GasStation.AllPrice + " ₽";
+            labelAmountDiscount.Text = Convert.ToString(GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100)) + " ₽";
             this.Show();
         }
 
@@ -97,7 +102,12 @@ namespace GasStation
         {
             EnterDiscountCard f = new EnterDiscountCard();
             f.ShowDialog();
-            label6.Text = Convert.ToString(GasStation.AllPrice - (GasStation.AllPrice * (GasStation.Discount / 100)));
+            labelAmountDiscount.Visible = true;
+            label6.Text = Convert.ToString(GasStation.AllPriceWithoutDiscount - (GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100)));
+            GasStation.AllPrice = GasStation.AllPriceWithoutDiscount - (GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100));
+            labelDiscount.Text = "Ваша скидка по карте \n составила:";
+            labelAmountDiscount.Text = Convert.ToString(GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100)) + " ₽";
         }
+
     }
 }

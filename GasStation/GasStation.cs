@@ -24,6 +24,8 @@ namespace GasStation
         static public DateTime date = DateTime.Now; //дата покупки
         static public int receiptNumber = 0; //номер чека
         static public double Discount = 0; //процент скидки
+        static public double AmountDiscount = 0; //сумма скидки по карте
+        static public double AllPriceWithoutDiscount = 0; //конечная сумма без скидки
 
         public static void InsertText(string path, string newText)
         {
