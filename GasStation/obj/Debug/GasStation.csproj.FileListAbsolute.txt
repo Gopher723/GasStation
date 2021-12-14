@@ -65,3 +65,4 @@ C:\Users\Professional\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStatio
 C:\Users\Professional\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.csproj.CoreCompileInputs.cache
 C:\Users\Professional\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.exe
 C:\Users\Professional\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.pdb
+C:\Users\Professional\Documents\GitHub\GasStation\GasStation\obj\Debug\GasStation.EnterDiscountCard.resources

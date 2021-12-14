@@ -50,7 +50,7 @@ namespace GasStation
                 }
                 MessageBox.Show("Спасибо за покупку!");
 
-                GasStation.AllPrice += GasStation.Price + GasStation.DopPrice;
+                //GasStation.AllPrice += GasStation.Price + GasStation.DopPrice;
 
                 string writePath = @"log.txt";
                 GasStation.receiptNumber++;

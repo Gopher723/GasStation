@@ -16,6 +16,7 @@ namespace GasStation
             label8.Text = DateTime.Now.ToString(); 
             labelOilPrice.Text = GasStation.Price + " ₽";
             label13.Text = GasStation.SelectedPetrolPump.ToString();
+            GasStation.AllPrice += GasStation.Price + GasStation.DopPrice;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -88,7 +89,15 @@ namespace GasStation
                 labelDopPrice.Text = GasStation.DopPrice + " ₽";
             }
             label6.Text = GasStation.Price + GasStation.DopPrice + " ₽";
+            GasStation.AllPrice += GasStation.Price + GasStation.DopPrice;
             this.Show();
+        }
+
+        private void buttonDiscountCard_Click(object sender, EventArgs e)
+        {
+            EnterDiscountCard f = new EnterDiscountCard();
+            f.ShowDialog();
+            label6.Text = Convert.ToString(GasStation.AllPrice - (GasStation.AllPrice * (GasStation.Discount / 100)));
         }
     }
 }

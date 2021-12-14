@@ -67,6 +67,12 @@
     <Compile Include="Controls\ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="EnterDiscountCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterDiscountCard.Designer.cs">
+      <DependentUpon>EnterDiscountCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="EnteringMail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CashReceipt.resx">
       <DependentUpon>CashReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterDiscountCard.resx">
+      <DependentUpon>EnterDiscountCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EnteringMail.resx">
       <DependentUpon>EnteringMail.cs</DependentUpon>
