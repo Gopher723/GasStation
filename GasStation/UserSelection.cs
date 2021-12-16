@@ -11,7 +11,7 @@ namespace GasStation
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
-        {
+        {            
             GasStation.AmountOfGasoline = 0; //количество литров
             GasStation.SelectedPetrolPump = 0; //номер колонки
             GasStation.LoadedGasoline = 0; //для залива топлива

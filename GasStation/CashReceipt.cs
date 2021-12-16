@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Net;
-using System.Net.Mail;
 using System.Windows.Forms;
 
 namespace GasStation
@@ -28,52 +26,13 @@ namespace GasStation
             frm.Show();
         }
         private void button3_Click(object sender, EventArgs e)
-        {
+        {            
             try
             {
+                GasStation.date = DateTime.Parse(label8.Text);
                 EnteringMail frm = new EnteringMail();
-                frm.ShowDialog();                
-                // отправитель - устанавливаем адрес и отображаемое в письме имя
-                MailAddress from = new MailAddress("oil.city723@gmail.com", "OilCity");
-                // кому отправляем
-                //MailAddress to = new MailAddress("di-di-diasha@mail.ru");
-                MailAddress to = new MailAddress($"{GasStation.Mail}");
-                // создаем объект сообщения
-                MailMessage m = new MailMessage(from, to);
-                // тема письма
-                m.Subject = "Чек";
-                // текст письма
-                if (GasStation.DopPrice != 0)
-                {
-                    m.Body = $"Тип топлива: {label4.Text}" +
-                         $"<br> Количество литров: {label5.Text}" +
-                         $"<br> Номер ТРК: {label13.Text}" +
-                         $"<br> Дата покупки: {label8.Text} " +
-                         $"<br> Топливо на сумму: {labelOilPrice.Text} ₽" +
-                         $"<br> {label9.Text} {labelDopPrice.Text} ₽" +
-                         $"<br> -------------------------------------" +
-                         $"<br> Итог к оплате: {label6.Text} ₽";
-                }
-                else
-                {
-                    m.Body = $"Тип топлива: {label4.Text}" +
-                        $"<br> Количество литров: {label5.Text}" +
-                        $"<br> Номер ТРК: {label13.Text}" +
-                        $"<br> Дата покупки: {label8.Text}" +
-                        $"<br> Топливо на сумму: {labelOilPrice.Text} ₽" +
-                        $"<br> -------------------------------------" +
-                        $"<br> Итог к оплате: {label6.Text} ₽";
-                }
-
-                // письмо представляет код html
-                m.IsBodyHtml = true;
-                // адрес smtp-сервера и порт, с которого будем отправлять письмо
-                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-                // логин и пароль
-                smtp.Credentials = new NetworkCredential("oil.city723@gmail.com", "GasStation723");
-                smtp.EnableSsl = true;
-                smtp.Send(m);
-                MessageBox.Show("Чек был отправлен на указанный вами e-mail.", "OilCity", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                frm.ShowDialog();
+                SendingEmail.Send(GasStation.Mail);                
             }            
             catch (Exception ex)
             {
@@ -81,20 +40,24 @@ namespace GasStation
             }
         }
         private void button2_Click(object sender, EventArgs e)
-        {
+        {            
             this.Hide();
+            GasStation.DopPrice = 0;
             AdditionalProducts frm = new AdditionalProducts();
             frm.ShowDialog();
             if(GasStation.DopPrice != 0)
             {
+                GasStation.DopPriceAll += GasStation.DopPrice;
                 label9.Text = "Доп. товары\nна сумму:";
-                labelDopPrice.Text = GasStation.DopPrice + " ₽";
+                labelDopPrice.Text = GasStation.DopPriceAll + " ₽";
+
             }
             GasStation.AllPrice += GasStation.DopPrice;
             GasStation.AllPriceWithoutDiscount += GasStation.DopPrice;
             GasStation.AllPrice = GasStation.AllPriceWithoutDiscount - (GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100));            
             label6.Text = GasStation.AllPrice + " ₽";
             labelAmountDiscount.Text = Convert.ToString(GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100)) + " ₽";
+            GasStation.AmountDiscount = GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100);
             this.Show();
         }
 
@@ -102,11 +65,15 @@ namespace GasStation
         {
             EnterDiscountCard f = new EnterDiscountCard();
             f.ShowDialog();
-            labelAmountDiscount.Visible = true;
             label6.Text = Convert.ToString(GasStation.AllPriceWithoutDiscount - (GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100)));
             GasStation.AllPrice = GasStation.AllPriceWithoutDiscount - (GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100));
-            labelDiscount.Text = "Ваша скидка по карте \n составила:";
-            labelAmountDiscount.Text = Convert.ToString(GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100)) + " ₽";
+            if (GasStation.Discount != 0)
+            {
+                labelAmountDiscount.Visible = true;
+                labelDiscount.Text = "Ваша скидка по карте \n составила:";
+                labelAmountDiscount.Text = Convert.ToString(GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100)) + " ₽";
+            }
+            GasStation.AmountDiscount = GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100);
         }
 
     }

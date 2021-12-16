@@ -6,13 +6,15 @@ namespace GasStation
 {
     public partial class Refueling : Form
     {
+        
         //double kol = GasStation.AmountOfGasoline;
         public Refueling()
-        {
-            InitializeComponent();            
+        {            
+            InitializeComponent();
             label2.Text += " " + GasStation.AmountOfGasoline + " л.";
             progressBar1.Maximum = (int)GasStation.AmountOfGasoline;
         }
+
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             progressBar1.PerformStep();
@@ -44,7 +46,8 @@ namespace GasStation
         {
             try
             {
-                if(GasStation.AmountOfGasoline != 0)
+                GasStation.Revenue += GasStation.AllPrice;
+                if (GasStation.AmountOfGasoline != 0)
                 {
                     throw new ArgumentException();
                 }
@@ -58,7 +61,7 @@ namespace GasStation
                 using (StreamWriter sw = new StreamWriter(writePath, true, System.Text.Encoding.Default))
                 {
                     sw.WriteLine($"Чек № {GasStation.receiptNumber}");
-                    sw.WriteLine($"Тип топлива:  {GasStation.SelectedGasType} \nКоличество литров: {GasStation.LoadedGasoline} \nНомер ТРК: {GasStation.SelectedPetrolPump} \nСумма к оплате: {GasStation.Price + GasStation.DopPrice}  Руб. \nДата покупки: {GasStation.date}");
+                    sw.WriteLine($"Тип топлива:  {GasStation.SelectedGasType} \nКоличество литров: {GasStation.LoadedGasoline} \nНомер ТРК: {GasStation.SelectedPetrolPump}  \nДата покупки: {GasStation.date} \nСумма к оплате: {GasStation.AllPrice}  Руб.");
                     sw.WriteLine("----------------------------------");
                 }
                                 

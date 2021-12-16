@@ -67,7 +67,7 @@ namespace GasStation
             }
             catch(Exception)
             {
-                MessageBox.Show("Выберите колонку/тип топлива!", "OilCity");
+                MessageBox.Show("Выберите колонку!", "OilCity");
             }
         }
 

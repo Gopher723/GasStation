@@ -100,6 +100,7 @@
     <Compile Include="Refueling.Designer.cs">
       <DependentUpon>Refueling.cs</DependentUpon>
     </Compile>
+    <Compile Include="SendingEmail.cs" />
     <Compile Include="UserSelection.cs">
       <SubType>Form</SubType>
     </Compile>

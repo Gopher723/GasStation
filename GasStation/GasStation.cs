@@ -26,6 +26,8 @@ namespace GasStation
         static public double Discount = 0; //процент скидки
         static public double AmountDiscount = 0; //сумма скидки по карте
         static public double AllPriceWithoutDiscount = 0; //конечная сумма без скидки
+        static public double DopPriceAll = 0; //сумма всех доп. покупок
+        static public double Revenue = 0; //выручка
 
         public static void InsertText(string path, string newText)
         {
