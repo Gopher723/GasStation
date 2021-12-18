@@ -10,45 +10,45 @@ namespace GasStation
         public MainPage()
         {
             InitializeComponent();
-            numericUpDown1.Visible = false;
-            numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
+            numericUpDownVolume.Visible = false;
+            numericUpDownVolume.ValueChanged += numericUpDown1_ValueChanged;
         }
 
         double price = 0;
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonAI92_Click(object sender, EventArgs e)
         {
-            numericUpDown1.Visible = true;
-            label7.Text = GasStation.GasTypes["АИ-92"] + " ₽";
+            numericUpDownVolume.Visible = true;
+            labelPriceLitre.Text = GasStation.GasTypes["АИ-92"] + " ₽";
             price = GasStation.GasTypes["АИ-92"];
-            button2.BackColor = Color.White;
-            button1.BackColor = Color.GreenYellow;
-            double answer = price * Convert.ToInt32(numericUpDown1.Value);
-            label6.Text = answer.ToString() + " ₽";
+            buttonAI95.BackColor = Color.White;
+            buttonAI92.BackColor = Color.GreenYellow;
+            double answer = price * Convert.ToInt32(numericUpDownVolume.Value);
+            labelSumma.Text = answer.ToString() + " ₽";
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonAI95_Click(object sender, EventArgs e)
         {
-            numericUpDown1.Visible = true;
-            label7.Text = GasStation.GasTypes["АИ-95"] + " ₽";
+            numericUpDownVolume.Visible = true;
+            labelPriceLitre.Text = GasStation.GasTypes["АИ-95"] + " ₽";
             price = GasStation.GasTypes["АИ-95"];
-            button1.BackColor = Color.White;
-            button2.BackColor = Color.GreenYellow;
-            double answer = price * Convert.ToInt32(numericUpDown1.Value);
-            label6.Text = answer.ToString() + " ₽";
+            buttonAI92.BackColor = Color.White;
+            buttonAI95.BackColor = Color.GreenYellow;
+            double answer = price * Convert.ToInt32(numericUpDownVolume.Value);
+            labelSumma.Text = answer.ToString() + " ₽";
         }
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            double answer = price * Convert.ToInt32(numericUpDown1.Value);
-            label6.Text = answer.ToString() + " ₽";
+            double answer = price * Convert.ToInt32(numericUpDownVolume.Value);
+            labelSumma.Text = answer.ToString() + " ₽";
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonContinue_Click(object sender, EventArgs e)
         {
 
             try
             {
                 GasStation.SelectedGasType = GasStation.GasTypes.FirstOrDefault(x => x.Value == price).Key; ;
-                GasStation.AmountOfGasoline = (double)numericUpDown1.Value;
-                GasStation.Price = price * Convert.ToInt32(numericUpDown1.Value);
+                GasStation.AmountOfGasoline = (double)numericUpDownVolume.Value;
+                GasStation.Price = price * Convert.ToInt32(numericUpDownVolume.Value);
                 if (GasStation.AmountOfGasoline == 0)
                 {
                     throw new ArgumentException();
@@ -71,65 +71,65 @@ namespace GasStation
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonPump1_Click(object sender, EventArgs e)
         {
-            button4.BackColor = Color.GreenYellow;
-            button5.BackColor = Color.White;
-            button6.BackColor = Color.White;
-            button7.BackColor = Color.White;
-            button8.BackColor = Color.White;
-            button9.BackColor = Color.White;
-            GasStation.SelectedPetrolPump = Convert.ToInt32(button4.Text);
+            buttonPump1.BackColor = Color.GreenYellow;
+            buttonPump2.BackColor = Color.White;
+            buttonPump3.BackColor = Color.White;
+            buttonPump4.BackColor = Color.White;
+            buttonPump5.BackColor = Color.White;
+            buttonPump6.BackColor = Color.White;
+            GasStation.SelectedPetrolPump = Convert.ToInt32(buttonPump1.Text);
         }
-        private void button5_Click(object sender, EventArgs e)
+        private void buttonPump2_Click(object sender, EventArgs e)
         {
-            button4.BackColor = Color.White;
-            button5.BackColor = Color.GreenYellow;
-            button6.BackColor = Color.White;
-            button7.BackColor = Color.White;
-            button8.BackColor = Color.White;
-            button9.BackColor = Color.White;
-            GasStation.SelectedPetrolPump = Convert.ToInt32(button5.Text);
+            buttonPump1.BackColor = Color.White;
+            buttonPump2.BackColor = Color.GreenYellow;
+            buttonPump3.BackColor = Color.White;
+            buttonPump4.BackColor = Color.White;
+            buttonPump5.BackColor = Color.White;
+            buttonPump6.BackColor = Color.White;
+            GasStation.SelectedPetrolPump = Convert.ToInt32(buttonPump2.Text);
         }
-        private void button6_Click(object sender, EventArgs e)
+        private void buttonPump3_Click(object sender, EventArgs e)
         {
-            button4.BackColor = Color.White;
-            button5.BackColor = Color.White;
-            button6.BackColor = Color.GreenYellow;
-            button7.BackColor = Color.White;
-            button8.BackColor = Color.White;
-            button9.BackColor = Color.White;
-            GasStation.SelectedPetrolPump = Convert.ToInt32(button6.Text);
+            buttonPump1.BackColor = Color.White;
+            buttonPump2.BackColor = Color.White;
+            buttonPump3.BackColor = Color.GreenYellow;
+            buttonPump4.BackColor = Color.White;
+            buttonPump5.BackColor = Color.White;
+            buttonPump6.BackColor = Color.White;
+            GasStation.SelectedPetrolPump = Convert.ToInt32(buttonPump3.Text);
         }
-        private void button7_Click(object sender, EventArgs e)
+        private void buttonPump4_Click(object sender, EventArgs e)
         {
-            button4.BackColor = Color.White;
-            button5.BackColor = Color.White;
-            button6.BackColor = Color.White;
-            button7.BackColor = Color.GreenYellow;
-            button8.BackColor = Color.White;
-            button9.BackColor = Color.White;
-            GasStation.SelectedPetrolPump = Convert.ToInt32(button7.Text);
+            buttonPump1.BackColor = Color.White;
+            buttonPump2.BackColor = Color.White;
+            buttonPump3.BackColor = Color.White;
+            buttonPump4.BackColor = Color.GreenYellow;
+            buttonPump5.BackColor = Color.White;
+            buttonPump6.BackColor = Color.White;
+            GasStation.SelectedPetrolPump = Convert.ToInt32(buttonPump4.Text);
         }
-        private void button8_Click(object sender, EventArgs e)
+        private void buttonPump5_Click(object sender, EventArgs e)
         {
-            button4.BackColor = Color.White;
-            button5.BackColor = Color.White;
-            button6.BackColor = Color.White;
-            button7.BackColor = Color.White;
-            button8.BackColor = Color.GreenYellow;
-            button9.BackColor = Color.White;
-            GasStation.SelectedPetrolPump = Convert.ToInt32(button8.Text);
+            buttonPump1.BackColor = Color.White;
+            buttonPump2.BackColor = Color.White;
+            buttonPump3.BackColor = Color.White;
+            buttonPump4.BackColor = Color.White;
+            buttonPump5.BackColor = Color.GreenYellow;
+            buttonPump6.BackColor = Color.White;
+            GasStation.SelectedPetrolPump = Convert.ToInt32(buttonPump5.Text);
         }
-        private void button9_Click(object sender, EventArgs e)
+        private void buttonPump6_Click(object sender, EventArgs e)
         {
-            button4.BackColor = Color.White;
-            button5.BackColor = Color.White;
-            button6.BackColor = Color.White;
-            button7.BackColor = Color.White;
-            button8.BackColor = Color.White;
-            button9.BackColor = Color.GreenYellow;
-            GasStation.SelectedPetrolPump = Convert.ToInt32(button9.Text);
+            buttonPump1.BackColor = Color.White;
+            buttonPump2.BackColor = Color.White;
+            buttonPump3.BackColor = Color.White;
+            buttonPump4.BackColor = Color.White;
+            buttonPump5.BackColor = Color.White;
+            buttonPump6.BackColor = Color.GreenYellow;
+            GasStation.SelectedPetrolPump = Convert.ToInt32(buttonPump6.Text);
         }
     }
 }

@@ -32,21 +32,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.buttonPay = new System.Windows.Forms.Button();
+            this.buttonAdditionalProducts = new System.Windows.Forms.Button();
+            this.labelTypeGas = new System.Windows.Forms.Label();
+            this.labelCountLitres = new System.Windows.Forms.Label();
+            this.labelAllPrice = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.labelData = new System.Windows.Forms.Label();
+            this.buttonEmail = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.labelDopPrice = new System.Windows.Forms.Label();
             this.labelOilPrice = new System.Windows.Forms.Label();
             this.labelNuberPump = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.labelNumberPump = new System.Windows.Forms.Label();
             this.buttonDiscountCard = new System.Windows.Forms.Button();
             this.labelDiscount = new System.Windows.Forms.Label();
             this.labelAmountDiscount = new System.Windows.Forms.Label();
@@ -88,62 +88,62 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Итог к оплате:";
             // 
-            // button1
+            // buttonPay
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(459, 562);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 45);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "ОПЛАТИТЬ";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonPay.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonPay.Location = new System.Drawing.Point(459, 562);
+            this.buttonPay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonPay.Name = "buttonPay";
+            this.buttonPay.Size = new System.Drawing.Size(172, 45);
+            this.buttonPay.TabIndex = 3;
+            this.buttonPay.Text = "ОПЛАТИТЬ";
+            this.buttonPay.UseVisualStyleBackColor = true;
+            this.buttonPay.Click += new System.EventHandler(this.buttonPay_Click);
             // 
-            // button2
+            // buttonAdditionalProducts
             // 
-            this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(32, 515);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 92);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Выбрать дополнительные товары";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonAdditionalProducts.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAdditionalProducts.Location = new System.Drawing.Point(32, 515);
+            this.buttonAdditionalProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonAdditionalProducts.Name = "buttonAdditionalProducts";
+            this.buttonAdditionalProducts.Size = new System.Drawing.Size(172, 92);
+            this.buttonAdditionalProducts.TabIndex = 4;
+            this.buttonAdditionalProducts.Text = "Выбрать дополнительные товары";
+            this.buttonAdditionalProducts.UseVisualStyleBackColor = true;
+            this.buttonAdditionalProducts.Click += new System.EventHandler(this.buttonAdditionalProducts_Click);
             // 
-            // label4
+            // labelTypeGas
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(354, 28);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 34);
-            this.label4.TabIndex = 5;
+            this.labelTypeGas.AutoSize = true;
+            this.labelTypeGas.BackColor = System.Drawing.Color.Transparent;
+            this.labelTypeGas.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTypeGas.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelTypeGas.Location = new System.Drawing.Point(354, 28);
+            this.labelTypeGas.Name = "labelTypeGas";
+            this.labelTypeGas.Size = new System.Drawing.Size(0, 34);
+            this.labelTypeGas.TabIndex = 5;
             // 
-            // label5
+            // labelCountLitres
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(354, 70);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 34);
-            this.label5.TabIndex = 6;
+            this.labelCountLitres.AutoSize = true;
+            this.labelCountLitres.BackColor = System.Drawing.Color.Transparent;
+            this.labelCountLitres.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCountLitres.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelCountLitres.Location = new System.Drawing.Point(354, 70);
+            this.labelCountLitres.Name = "labelCountLitres";
+            this.labelCountLitres.Size = new System.Drawing.Size(0, 34);
+            this.labelCountLitres.TabIndex = 6;
             // 
-            // label6
+            // labelAllPrice
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(266, 418);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 34);
-            this.label6.TabIndex = 7;
+            this.labelAllPrice.AutoSize = true;
+            this.labelAllPrice.BackColor = System.Drawing.Color.Transparent;
+            this.labelAllPrice.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAllPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelAllPrice.Location = new System.Drawing.Point(266, 418);
+            this.labelAllPrice.Name = "labelAllPrice";
+            this.labelAllPrice.Size = new System.Drawing.Size(0, 34);
+            this.labelAllPrice.TabIndex = 7;
             // 
             // label7
             // 
@@ -157,28 +157,28 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Дата покупки:";
             // 
-            // label8
+            // labelData
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(354, 154);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 34);
-            this.label8.TabIndex = 9;
+            this.labelData.AutoSize = true;
+            this.labelData.BackColor = System.Drawing.Color.Transparent;
+            this.labelData.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelData.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelData.Location = new System.Drawing.Point(354, 154);
+            this.labelData.Name = "labelData";
+            this.labelData.Size = new System.Drawing.Size(0, 34);
+            this.labelData.TabIndex = 9;
             // 
-            // button3
+            // buttonEmail
             // 
-            this.button3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(244, 515);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(172, 92);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Отправить чек на почту";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonEmail.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEmail.Location = new System.Drawing.Point(244, 515);
+            this.buttonEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonEmail.Name = "buttonEmail";
+            this.buttonEmail.Size = new System.Drawing.Size(172, 92);
+            this.buttonEmail.TabIndex = 10;
+            this.buttonEmail.Text = "Отправить чек на почту";
+            this.buttonEmail.UseVisualStyleBackColor = true;
+            this.buttonEmail.Click += new System.EventHandler(this.buttonEmail_Click);
             // 
             // label9
             // 
@@ -245,15 +245,15 @@
             this.labelNuberPump.TabIndex = 17;
             this.labelNuberPump.Text = "Номер ТРК:";
             // 
-            // label13
+            // labelNumberPump
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label13.Location = new System.Drawing.Point(354, 112);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 33);
-            this.label13.TabIndex = 18;
+            this.labelNumberPump.AutoSize = true;
+            this.labelNumberPump.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNumberPump.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelNumberPump.Location = new System.Drawing.Point(354, 112);
+            this.labelNumberPump.Name = "labelNumberPump";
+            this.labelNumberPump.Size = new System.Drawing.Size(0, 33);
+            this.labelNumberPump.TabIndex = 18;
             // 
             // buttonDiscountCard
             // 
@@ -296,21 +296,21 @@
             this.Controls.Add(this.labelAmountDiscount);
             this.Controls.Add(this.labelDiscount);
             this.Controls.Add(this.buttonDiscountCard);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.labelNumberPump);
             this.Controls.Add(this.labelNuberPump);
             this.Controls.Add(this.labelOilPrice);
             this.Controls.Add(this.labelDopPrice);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.buttonEmail);
+            this.Controls.Add(this.labelData);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.labelAllPrice);
+            this.Controls.Add(this.labelCountLitres);
+            this.Controls.Add(this.labelTypeGas);
+            this.Controls.Add(this.buttonAdditionalProducts);
+            this.Controls.Add(this.buttonPay);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -320,7 +320,7 @@
             this.MinimumSize = new System.Drawing.Size(697, 678);
             this.Name = "CashReceipt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OilCity";            
+            this.Text = "OilCity";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,21 +331,21 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button buttonPay;
+        private System.Windows.Forms.Button buttonAdditionalProducts;
+        private System.Windows.Forms.Label labelTypeGas;
+        private System.Windows.Forms.Label labelCountLitres;
+        private System.Windows.Forms.Label labelAllPrice;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label labelData;
+        private System.Windows.Forms.Button buttonEmail;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label labelDopPrice;
         private System.Windows.Forms.Label labelOilPrice;
         private System.Windows.Forms.Label labelNuberPump;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label labelNumberPump;
         private System.Windows.Forms.Button buttonDiscountCard;
         private System.Windows.Forms.Label labelDiscount;
         private System.Windows.Forms.Label labelAmountDiscount;

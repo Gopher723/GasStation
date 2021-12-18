@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserSelection));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonClient = new System.Windows.Forms.Button();
+            this.buttonAdministrator = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonClient
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(41, 123);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 105);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Клиент";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonClient.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonClient.Location = new System.Drawing.Point(41, 123);
+            this.buttonClient.Name = "buttonClient";
+            this.buttonClient.Size = new System.Drawing.Size(154, 105);
+            this.buttonClient.TabIndex = 0;
+            this.buttonClient.Text = "Клиент";
+            this.buttonClient.UseVisualStyleBackColor = true;
+            this.buttonClient.Click += new System.EventHandler(this.buttonClient_Click);
             // 
-            // button2
+            // buttonAdministrator
             // 
-            this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(318, 123);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 105);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Администратор";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonAdministrator.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAdministrator.Location = new System.Drawing.Point(318, 123);
+            this.buttonAdministrator.Name = "buttonAdministrator";
+            this.buttonAdministrator.Size = new System.Drawing.Size(154, 105);
+            this.buttonAdministrator.TabIndex = 1;
+            this.buttonAdministrator.Text = "Администратор";
+            this.buttonAdministrator.UseVisualStyleBackColor = true;
+            this.buttonAdministrator.Click += new System.EventHandler(this.buttonAdministrator_Click);
             // 
             // label1
             // 
@@ -74,8 +74,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
             this.ClientSize = new System.Drawing.Size(513, 280);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonAdministrator);
+            this.Controls.Add(this.buttonClient);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(535, 336);
             this.MinimumSize = new System.Drawing.Size(535, 336);
@@ -90,8 +90,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonClient;
+        private System.Windows.Forms.Button buttonAdministrator;
         private System.Windows.Forms.Label label1;
     }
 }

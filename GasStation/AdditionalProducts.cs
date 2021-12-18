@@ -8,84 +8,84 @@ namespace GasStation
         public AdditionalProducts()
         {
             InitializeComponent();
-            numericUpDown1.Visible = false;
-            numericUpDown2.Visible = false;
-            numericUpDown3.Visible = false;
+            numericUpDownCoffe.Visible = false;
+            numericUpDownCroissant.Visible = false;
+            numericUpDownBurger.Visible = false;
         }
         double coffeePrice = 0, croissantPrice = 0, burgerPrice = 0, price1 = 0, price2 = 0, price3 = 0;
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBoxCoffe_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (comboBox1.SelectedItem.ToString())
+            switch (comboBoxCoffe.SelectedItem.ToString())
             {
                 case "Латте":
-                    label1.Text = "100 ₽";
+                    labelPriceCoffe.Text = "100 ₽";
                     coffeePrice = 100;
                     break;
                 case "Капучино":
-                    label1.Text = "99 ₽";
+                    labelPriceCoffe.Text = "99 ₽";
                     coffeePrice = 99;
                     break;
                 case "Американо":
-                    label1.Text = "120 ₽";
+                    labelPriceCoffe.Text = "120 ₽";
                     coffeePrice = 120;
                     break;
             }
-            numericUpDown1.Visible = true;
+            numericUpDownCoffe.Visible = true;
         }
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        private void numericUpDownCoffe_ValueChanged(object sender, EventArgs e)
         {
-            price1 = Convert.ToDouble(numericUpDown1.Value) * coffeePrice;
-            label8.Text = price1 + price2 + price3 + " ₽";
+            price1 = Convert.ToDouble(numericUpDownCoffe.Value) * coffeePrice;
+            labelSumma.Text = price1 + price2 + price3 + " ₽";
         }
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBoxCroissant_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (comboBox2.SelectedItem.ToString())
+            switch (comboBoxCroissant.SelectedItem.ToString())
             {
                 case "Со сгущенкой":
-                    label5.Text = "59 ₽";
+                    labelPriceCroissant.Text = "59 ₽";
                     croissantPrice = 59;
                     break;
                 case "С кремом":
-                    label5.Text = "55 ₽";
+                    labelPriceCroissant.Text = "55 ₽";
                     croissantPrice = 55;
                     break;
                 case "С шоколадом":
-                    label5.Text = "50 ₽";
+                    labelPriceCroissant.Text = "50 ₽";
                     croissantPrice = 50;
                     break;
             }
-            numericUpDown2.Visible = true;
+            numericUpDownCroissant.Visible = true;
         }
-        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        private void numericUpDownCroissant_ValueChanged(object sender, EventArgs e)
         {
-            price2 = Convert.ToDouble(numericUpDown2.Value) * croissantPrice;
-            label8.Text = price1 + price2 + price3 + " ₽";
+            price2 = Convert.ToDouble(numericUpDownCroissant.Value) * croissantPrice;
+            labelSumma.Text = price1 + price2 + price3 + " ₽";
         }
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBoxBurger_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (comboBox3.SelectedItem.ToString())
+            switch (comboBoxBurger.SelectedItem.ToString())
             {
                 case "Чизбургер":
-                    label6.Text = "52 ₽";
+                    labelPriceBurger.Text = "52 ₽";
                     burgerPrice = 52;
                     break;
                 case "Чикенбургер":
-                    label6.Text = "52 ₽";
+                    labelPriceBurger.Text = "52 ₽";
                     burgerPrice = 52;
                     break;
                 case "Гамбургер":
-                    label6.Text = "130 ₽";
+                    labelPriceBurger.Text = "130 ₽";
                     burgerPrice = 130;
                     break;
             }
-            numericUpDown3.Visible = true;
+            numericUpDownBurger.Visible = true;
         }
-        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
+        private void numericUpDownBurger_ValueChanged(object sender, EventArgs e)
         {
-            price3 = Convert.ToDouble(numericUpDown3.Value) * burgerPrice;
-            label8.Text = price1 + price2 + price3 + " ₽";
+            price3 = Convert.ToDouble(numericUpDownBurger.Value) * burgerPrice;
+            labelSumma.Text = price1 + price2 + price3 + " ₽";
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonContinuePayment_Click(object sender, EventArgs e)
         {
             GasStation.DopPrice += price1 + price2 + price3;
             this.Close();

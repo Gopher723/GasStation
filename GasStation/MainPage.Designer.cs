@@ -34,25 +34,25 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.buttonAI92 = new System.Windows.Forms.Button();
+            this.buttonAI95 = new System.Windows.Forms.Button();
+            this.numericUpDownVolume = new System.Windows.Forms.NumericUpDown();
+            this.buttonContinue = new System.Windows.Forms.Button();
+            this.labelSumma = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonPump1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.buttonPump2 = new System.Windows.Forms.Button();
+            this.buttonPump3 = new System.Windows.Forms.Button();
+            this.buttonPump4 = new System.Windows.Forms.Button();
+            this.buttonPump5 = new System.Windows.Forms.Button();
+            this.buttonPump6 = new System.Windows.Forms.Button();
+            this.labelPriceLitre = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownVolume)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -123,57 +123,57 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Сумма:";
             // 
-            // button1
+            // buttonAI92
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(321, 105);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 62);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "АИ-92";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAI92.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAI92.Location = new System.Drawing.Point(321, 105);
+            this.buttonAI92.Name = "buttonAI92";
+            this.buttonAI92.Size = new System.Drawing.Size(76, 62);
+            this.buttonAI92.TabIndex = 5;
+            this.buttonAI92.Text = "АИ-92";
+            this.buttonAI92.UseVisualStyleBackColor = true;
+            this.buttonAI92.Click += new System.EventHandler(this.buttonAI92_Click);
             // 
-            // button2
+            // buttonAI95
             // 
-            this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(442, 105);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 62);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "АИ-95";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonAI95.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAI95.Location = new System.Drawing.Point(442, 105);
+            this.buttonAI95.Name = "buttonAI95";
+            this.buttonAI95.Size = new System.Drawing.Size(75, 62);
+            this.buttonAI95.TabIndex = 6;
+            this.buttonAI95.Text = "АИ-95";
+            this.buttonAI95.UseVisualStyleBackColor = true;
+            this.buttonAI95.Click += new System.EventHandler(this.buttonAI95_Click);
             // 
-            // numericUpDown1
+            // numericUpDownVolume
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDown1.Location = new System.Drawing.Point(442, 269);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(75, 26);
-            this.numericUpDown1.TabIndex = 8;
+            this.numericUpDownVolume.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numericUpDownVolume.Location = new System.Drawing.Point(442, 269);
+            this.numericUpDownVolume.Name = "numericUpDownVolume";
+            this.numericUpDownVolume.Size = new System.Drawing.Size(75, 26);
+            this.numericUpDownVolume.TabIndex = 8;
             // 
-            // button3
+            // buttonContinue
             // 
-            this.button3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(580, 371);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(168, 43);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "ПРОДОЛЖИТЬ";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonContinue.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonContinue.Location = new System.Drawing.Point(580, 371);
+            this.buttonContinue.Name = "buttonContinue";
+            this.buttonContinue.Size = new System.Drawing.Size(168, 43);
+            this.buttonContinue.TabIndex = 9;
+            this.buttonContinue.Text = "ПРОДОЛЖИТЬ";
+            this.buttonContinue.UseVisualStyleBackColor = true;
+            this.buttonContinue.Click += new System.EventHandler(this.buttonContinue_Click);
             // 
-            // label6
+            // labelSumma
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(344, 328);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 29);
-            this.label6.TabIndex = 10;
+            this.labelSumma.AutoSize = true;
+            this.labelSumma.BackColor = System.Drawing.Color.Transparent;
+            this.labelSumma.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelSumma.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelSumma.Location = new System.Drawing.Point(344, 328);
+            this.labelSumma.Name = "labelSumma";
+            this.labelSumma.Size = new System.Drawing.Size(0, 29);
+            this.labelSumma.TabIndex = 10;
             // 
             // pictureBox1
             // 
@@ -186,16 +186,16 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
-            // button4
+            // buttonPump1
             // 
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(42, 140);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(27, 29);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "1";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonPump1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonPump1.Location = new System.Drawing.Point(42, 140);
+            this.buttonPump1.Name = "buttonPump1";
+            this.buttonPump1.Size = new System.Drawing.Size(27, 29);
+            this.buttonPump1.TabIndex = 12;
+            this.buttonPump1.Text = "1";
+            this.buttonPump1.UseVisualStyleBackColor = true;
+            this.buttonPump1.Click += new System.EventHandler(this.buttonPump1_Click);
             // 
             // pictureBox2
             // 
@@ -252,67 +252,67 @@
             this.pictureBox6.TabIndex = 17;
             this.pictureBox6.TabStop = false;
             // 
-            // button5
+            // buttonPump2
             // 
-            this.button5.Location = new System.Drawing.Point(134, 140);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(27, 29);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "2";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.buttonPump2.Location = new System.Drawing.Point(134, 140);
+            this.buttonPump2.Name = "buttonPump2";
+            this.buttonPump2.Size = new System.Drawing.Size(27, 29);
+            this.buttonPump2.TabIndex = 18;
+            this.buttonPump2.Text = "2";
+            this.buttonPump2.UseVisualStyleBackColor = true;
+            this.buttonPump2.Click += new System.EventHandler(this.buttonPump2_Click);
             // 
-            // button6
+            // buttonPump3
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.Location = new System.Drawing.Point(42, 238);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(27, 29);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "3";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.buttonPump3.BackColor = System.Drawing.Color.Transparent;
+            this.buttonPump3.Location = new System.Drawing.Point(42, 238);
+            this.buttonPump3.Name = "buttonPump3";
+            this.buttonPump3.Size = new System.Drawing.Size(27, 29);
+            this.buttonPump3.TabIndex = 19;
+            this.buttonPump3.Text = "3";
+            this.buttonPump3.UseVisualStyleBackColor = false;
+            this.buttonPump3.Click += new System.EventHandler(this.buttonPump3_Click);
             // 
-            // button7
+            // buttonPump4
             // 
-            this.button7.Location = new System.Drawing.Point(134, 238);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(27, 29);
-            this.button7.TabIndex = 20;
-            this.button7.Text = "4";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.buttonPump4.Location = new System.Drawing.Point(134, 238);
+            this.buttonPump4.Name = "buttonPump4";
+            this.buttonPump4.Size = new System.Drawing.Size(27, 29);
+            this.buttonPump4.TabIndex = 20;
+            this.buttonPump4.Text = "4";
+            this.buttonPump4.UseVisualStyleBackColor = true;
+            this.buttonPump4.Click += new System.EventHandler(this.buttonPump4_Click);
             // 
-            // button8
+            // buttonPump5
             // 
-            this.button8.Location = new System.Drawing.Point(42, 331);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(27, 29);
-            this.button8.TabIndex = 21;
-            this.button8.Text = "5";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.buttonPump5.Location = new System.Drawing.Point(42, 331);
+            this.buttonPump5.Name = "buttonPump5";
+            this.buttonPump5.Size = new System.Drawing.Size(27, 29);
+            this.buttonPump5.TabIndex = 21;
+            this.buttonPump5.Text = "5";
+            this.buttonPump5.UseVisualStyleBackColor = true;
+            this.buttonPump5.Click += new System.EventHandler(this.buttonPump5_Click);
             // 
-            // button9
+            // buttonPump6
             // 
-            this.button9.Location = new System.Drawing.Point(134, 331);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(27, 29);
-            this.button9.TabIndex = 22;
-            this.button9.Text = "6";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.buttonPump6.Location = new System.Drawing.Point(134, 331);
+            this.buttonPump6.Name = "buttonPump6";
+            this.buttonPump6.Size = new System.Drawing.Size(27, 29);
+            this.buttonPump6.TabIndex = 22;
+            this.buttonPump6.Text = "6";
+            this.buttonPump6.UseVisualStyleBackColor = true;
+            this.buttonPump6.Click += new System.EventHandler(this.buttonPump6_Click);
             // 
-            // label7
+            // labelPriceLitre
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(420, 188);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 29);
-            this.label7.TabIndex = 23;
+            this.labelPriceLitre.AutoSize = true;
+            this.labelPriceLitre.BackColor = System.Drawing.Color.Transparent;
+            this.labelPriceLitre.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPriceLitre.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelPriceLitre.Location = new System.Drawing.Point(420, 188);
+            this.labelPriceLitre.Name = "labelPriceLitre";
+            this.labelPriceLitre.Size = new System.Drawing.Size(0, 29);
+            this.labelPriceLitre.TabIndex = 23;
             // 
             // MainPage
             // 
@@ -320,24 +320,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
             this.ClientSize = new System.Drawing.Size(770, 431);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.labelPriceLitre);
+            this.Controls.Add(this.buttonPump6);
+            this.Controls.Add(this.buttonPump5);
+            this.Controls.Add(this.buttonPump4);
+            this.Controls.Add(this.buttonPump3);
+            this.Controls.Add(this.buttonPump2);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.buttonPump1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.labelSumma);
+            this.Controls.Add(this.buttonContinue);
+            this.Controls.Add(this.numericUpDownVolume);
+            this.Controls.Add(this.buttonAI95);
+            this.Controls.Add(this.buttonAI92);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -350,7 +350,7 @@
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OilCity";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownVolume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -369,24 +369,24 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button buttonAI92;
+        private System.Windows.Forms.Button buttonAI95;
+        private System.Windows.Forms.NumericUpDown numericUpDownVolume;
+        private System.Windows.Forms.Button buttonContinue;
+        private System.Windows.Forms.Label labelSumma;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonPump1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button buttonPump2;
+        private System.Windows.Forms.Button buttonPump3;
+        private System.Windows.Forms.Button buttonPump4;
+        private System.Windows.Forms.Button buttonPump5;
+        private System.Windows.Forms.Button buttonPump6;
+        private System.Windows.Forms.Label labelPriceLitre;
     }
 }
 

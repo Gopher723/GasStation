@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
 using System.IO;
+using Word = Microsoft.Office.Interop.Word;
+using System.Windows.Forms;
 
 namespace GasStation
 {
@@ -28,6 +30,8 @@ namespace GasStation
         static public double AllPriceWithoutDiscount = 0; //конечная сумма без скидки
         static public double DopPriceAll = 0; //сумма всех доп. покупок
         static public double Revenue = 0; //выручка
+        static public double FuelVolume95 = 1000; //кол-во литров в резервуаре
+        static public double FuelVolume92 = 1000; //кол-во литров в резервуаре
 
         public static void InsertText(string path, string newText)
         {
@@ -47,9 +51,8 @@ namespace GasStation
         {
             //переводим строку в байт-массим  
             byte[] bytes = Encoding.Unicode.GetBytes(s);
-            //создаем объект для получения средст шифрования  
-            MD5CryptoServiceProvider CSP =
-                new MD5CryptoServiceProvider();
+            //создаем объект для получения средств шифрования  
+            MD5CryptoServiceProvider CSP = new MD5CryptoServiceProvider();
             //вычисляем хеш-представление в байтах  
             byte[] byteHash = CSP.ComputeHash(bytes);
             string hash = string.Empty;
@@ -57,6 +60,35 @@ namespace GasStation
             foreach (byte b in byteHash)
                 hash += string.Format("{0:x2}", b);
             return hash;
+        }
+
+        public static void CreatePdfLog()
+        {
+            File.Copy("log.txt", "tmplog.txt");
+            GasStation.InsertText("tmplog.txt", $"Отчет за {date.ToLongDateString()}\n\n");
+
+            string writePath = @"tmplog.txt";
+            using (StreamWriter sw = new StreamWriter(writePath, true, System.Text.Encoding.Default))
+            {
+                sw.WriteLine($"Выручка: {GasStation.Revenue} Руб.");
+                sw.WriteLine($"Остаток АИ-95 в резервуаре: {GasStation.FuelVolume95} л");
+                sw.WriteLine($"Остаток АИ-92 в резервуаре: {GasStation.FuelVolume92} л");
+            }
+            string baseDirectoryPath = AppDomain.CurrentDomain.BaseDirectory;
+            Word.Application appWord = new Word.Application();
+            var wordDocument = appWord.Documents.Open(baseDirectoryPath + @"\tmplog.txt");
+            wordDocument.ExportAsFixedFormat(baseDirectoryPath + @"\tmplog.pdf", Word.WdExportFormat.wdExportFormatPDF);
+            appWord.ActiveDocument.Close();
+
+            string destFilePath = "";
+            SaveFileDialog sfd = new SaveFileDialog();
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                destFilePath = sfd.FileName;
+            }
+
+            File.Copy(@"tmplog.pdf", destFilePath + ".pdf");
+            File.Delete(@"tmplog.pdf");
         }
     }
 }

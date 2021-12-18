@@ -10,7 +10,7 @@ namespace GasStation
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonClient_Click(object sender, EventArgs e)
         {            
             GasStation.AmountOfGasoline = 0; //количество литров
             GasStation.SelectedPetrolPump = 0; //номер колонки
@@ -21,7 +21,6 @@ namespace GasStation
             GasStation.DopPrice = 0; //цена за доп товары
             GasStation.AllPrice = 0; //сумма покупки
             GasStation.date = DateTime.Now; //дата покупки
-            GasStation.receiptNumber = 0; //номер чека
             GasStation.Discount = 0; //процент скидки
             GasStation.AmountDiscount = 0; //сумма скидки по карте
             GasStation.AllPriceWithoutDiscount = 0; //конечная сумма без скидки
@@ -30,7 +29,7 @@ namespace GasStation
             frm.Show();
             //this.Hide();
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonAdministrator_Click(object sender, EventArgs e)
         {
             Authentication frma = new Authentication();
             frma.Show();
