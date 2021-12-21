@@ -11,6 +11,11 @@ namespace GasStation
             numericUpDownCoffe.Visible = false;
             numericUpDownCroissant.Visible = false;
             numericUpDownBurger.Visible = false;
+            if (GasStation.Check == true)
+            {
+                pictureBox4.Visible = true;
+                pictureBox4.SendToBack();
+            }
         }
         double coffeePrice = 0, croissantPrice = 0, burgerPrice = 0, price1 = 0, price2 = 0, price3 = 0;
         private void comboBoxCoffe_SelectedIndexChanged(object sender, EventArgs e)

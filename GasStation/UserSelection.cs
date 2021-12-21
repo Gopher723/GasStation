@@ -27,28 +27,40 @@ namespace GasStation
 
             MainPage frm = new MainPage();
             frm.Show();
-            //this.Hide();
         }
         private void buttonAdministrator_Click(object sender, EventArgs e)
         {
             Authentication frma = new Authentication();
             frma.Show();
-            //this.Hide();
         }
 
         private void UserSelection_FormClosing(object sender, FormClosingEventArgs e)
-        {            
-           
+        {                       
             var result = MessageBox.Show("Вы действительно хотите закрыть программу?", "OilCity", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
-            {
-                
+            {                
                 File.Delete("log.txt");
                 e.Cancel = false;
             }
             else
             {
                 e.Cancel = true;
+            }
+        }
+
+        private void toggleButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox checkBox = (CheckBox)sender; // приводим отправителя к элементу типа CheckBox
+            if (checkBox.Checked == true)
+            {
+                pictureBox1.Visible = true;
+                pictureBox1.SendToBack();
+                GasStation.Check = true;
+            }
+            else
+            {
+                pictureBox1.Visible = false;
+                GasStation.Check = false;
             }
         }
     }

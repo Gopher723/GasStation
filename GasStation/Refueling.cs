@@ -10,7 +10,12 @@ namespace GasStation
         {            
             InitializeComponent();
             label2.Text += " " + GasStation.AmountOfGasoline + " л";
-            progressBar1.Maximum = (int)GasStation.AmountOfGasoline;            
+            progressBar1.Maximum = (int)GasStation.AmountOfGasoline;
+            if (GasStation.Check == true)
+            {
+                pictureBox2.Visible = true;
+                pictureBox2.SendToBack();
+            }
         }
 
         private void timer1_Tick_1(object sender, EventArgs e)
@@ -71,7 +76,7 @@ namespace GasStation
                 }                                
                 this.Close();
             }
-            catch(ArgumentException arg)
+            catch(ArgumentException)
             {
                 MessageBox.Show("Топливо не залито!", "OilCity");
             }

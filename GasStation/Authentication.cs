@@ -8,6 +8,11 @@ namespace GasStation
         public Authentication()
         {
             InitializeComponent();
+            if (GasStation.Check == true)
+            {
+                pictureBox1.Visible = true;
+                pictureBox1.SendToBack();
+            }
         }
         private void buttonLogin_Click(object sender, EventArgs e)
         {
@@ -27,7 +32,7 @@ namespace GasStation
                     throw new ArgumentException();
                 }
             }
-            catch(ArgumentException arg)
+            catch(ArgumentException)
             {
                 MessageBox.Show("Неверный код!", "OilCity");
             }

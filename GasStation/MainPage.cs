@@ -12,6 +12,11 @@ namespace GasStation
             InitializeComponent();
             numericUpDownVolume.Visible = false;
             numericUpDownVolume.ValueChanged += numericUpDown1_ValueChanged;
+            if (GasStation.Check == true)
+            {
+                pictureBox7.Visible = true;
+                pictureBox7.SendToBack();
+            }
         }
 
         double price = 0;
@@ -43,7 +48,6 @@ namespace GasStation
 
         private void buttonContinue_Click(object sender, EventArgs e)
         {
-
             try
             {
                 GasStation.SelectedGasType = GasStation.GasTypes.FirstOrDefault(x => x.Value == price).Key; ;

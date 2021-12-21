@@ -32,6 +32,7 @@ namespace GasStation
         static public double Revenue = 0; //выручка
         static public double FuelVolume95 = 1000; //кол-во литров в резервуаре
         static public double FuelVolume92 = 1000; //кол-во литров в резервуаре
+        static public bool Check = false;
 
         public static void InsertText(string path, string newText)
         {

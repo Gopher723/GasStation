@@ -41,16 +41,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 58);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 46);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(198, 331);
+            this.pictureBox1.Size = new System.Drawing.Size(176, 265);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -61,17 +64,18 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(154, 9);
+            this.label1.Location = new System.Drawing.Point(137, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(453, 46);
+            this.label1.Size = new System.Drawing.Size(394, 40);
             this.label1.TabIndex = 1;
             this.label1.Text = "Заправка автомобиля";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(256, 245);
+            this.progressBar1.Location = new System.Drawing.Point(228, 196);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(438, 28);
+            this.progressBar1.Size = new System.Drawing.Size(389, 22);
             this.progressBar1.Step = 1;
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 0;
@@ -85,9 +89,10 @@
             // 
             this.buttonStop.BackColor = System.Drawing.Color.Crimson;
             this.buttonStop.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonStop.Location = new System.Drawing.Point(351, 308);
+            this.buttonStop.Location = new System.Drawing.Point(312, 246);
+            this.buttonStop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(75, 42);
+            this.buttonStop.Size = new System.Drawing.Size(67, 34);
             this.buttonStop.TabIndex = 3;
             this.buttonStop.Text = "Стоп";
             this.buttonStop.UseVisualStyleBackColor = false;
@@ -97,9 +102,10 @@
             // 
             this.buttonStart.BackColor = System.Drawing.Color.GreenYellow;
             this.buttonStart.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonStart.Location = new System.Drawing.Point(262, 308);
+            this.buttonStart.Location = new System.Drawing.Point(233, 246);
+            this.buttonStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(75, 42);
+            this.buttonStart.Size = new System.Drawing.Size(67, 34);
             this.buttonStart.TabIndex = 4;
             this.buttonStart.Text = "Пуск";
             this.buttonStart.UseVisualStyleBackColor = false;
@@ -108,9 +114,10 @@
             // buttonEnd
             // 
             this.buttonEnd.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonEnd.Location = new System.Drawing.Point(567, 365);
+            this.buttonEnd.Location = new System.Drawing.Point(504, 292);
+            this.buttonEnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEnd.Name = "buttonEnd";
-            this.buttonEnd.Size = new System.Drawing.Size(128, 58);
+            this.buttonEnd.Size = new System.Drawing.Size(114, 46);
             this.buttonEnd.TabIndex = 5;
             this.buttonEnd.Text = "Завершить покупку";
             this.buttonEnd.UseVisualStyleBackColor = true;
@@ -122,9 +129,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(256, 132);
+            this.label2.Location = new System.Drawing.Point(228, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(221, 29);
+            this.label2.Size = new System.Drawing.Size(185, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "Осталось залить:";
             // 
@@ -134,35 +141,46 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(256, 174);
+            this.label3.Location = new System.Drawing.Point(228, 139);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 29);
+            this.label3.Size = new System.Drawing.Size(87, 24);
             this.label3.TabIndex = 7;
             this.label3.Text = "Залито:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(441, 38);
+            this.label4.Location = new System.Drawing.Point(392, 30);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 20);
+            this.label4.Size = new System.Drawing.Size(0, 17);
             this.label4.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(522, 38);
+            this.label5.Location = new System.Drawing.Point(464, 30);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 20);
+            this.label5.Size = new System.Drawing.Size(0, 17);
             this.label5.TabIndex = 9;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-9, -8);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(667, 377);
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             // 
             // Refueling
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
-            this.ClientSize = new System.Drawing.Size(728, 440);
+            this.ClientSize = new System.Drawing.Size(651, 359);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -174,12 +192,14 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(750, 496);
-            this.MinimumSize = new System.Drawing.Size(750, 496);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(669, 406);
+            this.MinimumSize = new System.Drawing.Size(669, 406);
             this.Name = "Refueling";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OilCity";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,5 +218,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

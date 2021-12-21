@@ -9,7 +9,11 @@ namespace GasStation
         public EnteringMail()
         {
             InitializeComponent();
-            //pictureBox1.SendToBack();
+            if (GasStation.Check == true)
+            {
+                pictureBox1.Visible = true;
+                pictureBox1.SendToBack();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,7 +35,7 @@ namespace GasStation
                 }
                 this.Close();
             }
-            catch (ArgumentException argEx)
+            catch (ArgumentException)
             {
                 MessageBox.Show("Неверный формат e-mail адреса!", "OilCity");
             }            

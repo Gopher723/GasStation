@@ -17,6 +17,11 @@ namespace GasStation
             GasStation.AllPrice = GasStation.Price;
             GasStation.AllPriceWithoutDiscount = GasStation.Price;
             labelAmountDiscount.Visible = false;
+            if (GasStation.Check == true)
+            {
+                pictureBox1.Visible = true;
+                pictureBox1.SendToBack();
+            }
         }
         private void buttonPay_Click(object sender, EventArgs e)
         {

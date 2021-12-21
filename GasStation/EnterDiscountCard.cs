@@ -15,6 +15,11 @@ namespace GasStation
         public EnterDiscountCard()
         {
             InitializeComponent();
+            if (GasStation.Check == true)
+            {
+                pictureBox1.Visible = true;
+                pictureBox1.SendToBack();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -24,7 +29,7 @@ namespace GasStation
                 var discount = GasStation.DiscountCard[textBoxCard.Text];
                 GasStation.Discount = discount;
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 MessageBox.Show("Неверный номер карты!");
             }
