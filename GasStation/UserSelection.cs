@@ -19,6 +19,7 @@ namespace GasStation
             GasStation.Price = 0; //цена топлива
             GasStation.Mail = ""; //почта пользователя
             GasStation.DopPrice = 0; //цена за доп товары
+            GasStation.DopPriceAll = 0;
             GasStation.AllPrice = 0; //сумма покупки
             GasStation.date = DateTime.Now; //дата покупки
             GasStation.Discount = 0; //процент скидки

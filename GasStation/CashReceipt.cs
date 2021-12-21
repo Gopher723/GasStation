@@ -25,24 +25,18 @@ namespace GasStation
         }
         private void buttonPay_Click(object sender, EventArgs e)
         {
+            if (checkBox1.Checked == true)
+            {
+                GasStation.date = DateTime.Parse(labelData.Text);
+                EnteringMail form = new EnteringMail();
+                form.ShowDialog();
+                SendingEmail.Send(GasStation.Mail);
+            }
+
             GasStation.date = DateTime.Parse(labelData.Text);
             this.Close();
             Refueling frm = new Refueling();
             frm.Show();
-        }
-        private void buttonEmail_Click(object sender, EventArgs e)
-        {            
-            try
-            {
-                GasStation.date = DateTime.Parse(labelData.Text);
-                EnteringMail frm = new EnteringMail();
-                frm.ShowDialog();
-                SendingEmail.Send(GasStation.Mail);                
-            }            
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
         private void buttonAdditionalProducts_Click(object sender, EventArgs e)
         {            
@@ -69,7 +63,7 @@ namespace GasStation
         {
             EnterDiscountCard f = new EnterDiscountCard();
             f.ShowDialog();
-            labelAllPrice.Text = Convert.ToString(GasStation.AllPriceWithoutDiscount - (GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100)));
+            labelAllPrice.Text = Convert.ToString(GasStation.AllPriceWithoutDiscount - (GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100))) + " ₽";
             GasStation.AllPrice = GasStation.AllPriceWithoutDiscount - (GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100));
             if (GasStation.Discount != 0)
             {
@@ -79,6 +73,5 @@ namespace GasStation
             }
             GasStation.AmountDiscount = GasStation.AllPriceWithoutDiscount * (GasStation.Discount / 100);
         }
-
     }
 }
