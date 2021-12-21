@@ -12,7 +12,6 @@ namespace GasStation
             if (GasStation.Check == true)
             {
                 pictureBox1.Visible = true;
-                pictureBox1.SendToBack();
             }
         }
 
@@ -36,8 +35,9 @@ namespace GasStation
                 this.Close();
             }
             catch (ArgumentException)
-            {
+            {                
                 MessageBox.Show("Неверный формат e-mail адреса!", "OilCity");
+                textBox1.Clear();
             }            
         }       
     }

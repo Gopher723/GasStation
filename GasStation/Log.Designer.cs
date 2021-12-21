@@ -40,10 +40,10 @@
             // buttonOutputScreen
             // 
             this.buttonOutputScreen.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOutputScreen.Location = new System.Drawing.Point(46, 26);
+            this.buttonOutputScreen.Location = new System.Drawing.Point(52, 32);
             this.buttonOutputScreen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonOutputScreen.Name = "buttonOutputScreen";
-            this.buttonOutputScreen.Size = new System.Drawing.Size(105, 64);
+            this.buttonOutputScreen.Size = new System.Drawing.Size(118, 80);
             this.buttonOutputScreen.TabIndex = 1;
             this.buttonOutputScreen.Text = "Вывести отчет на экран";
             this.buttonOutputScreen.UseVisualStyleBackColor = true;
@@ -52,10 +52,10 @@
             // buttonDownload
             // 
             this.buttonDownload.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDownload.Location = new System.Drawing.Point(213, 26);
+            this.buttonDownload.Location = new System.Drawing.Point(240, 32);
             this.buttonDownload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonDownload.Name = "buttonDownload";
-            this.buttonDownload.Size = new System.Drawing.Size(105, 64);
+            this.buttonDownload.Size = new System.Drawing.Size(118, 80);
             this.buttonDownload.TabIndex = 2;
             this.buttonDownload.Text = "Скачать отчет на компьютер";
             this.buttonDownload.UseVisualStyleBackColor = true;
@@ -64,20 +64,20 @@
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(46, 110);
+            this.richTextBox1.Location = new System.Drawing.Point(52, 138);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(447, 230);
+            this.richTextBox1.Size = new System.Drawing.Size(502, 286);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
             // buttonEnd
             // 
             this.buttonEnd.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonEnd.Location = new System.Drawing.Point(388, 26);
+            this.buttonEnd.Location = new System.Drawing.Point(436, 32);
             this.buttonEnd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEnd.Name = "buttonEnd";
-            this.buttonEnd.Size = new System.Drawing.Size(104, 64);
+            this.buttonEnd.Size = new System.Drawing.Size(117, 80);
             this.buttonEnd.TabIndex = 4;
             this.buttonEnd.Text = "Закончить просмотр";
             this.buttonEnd.UseVisualStyleBackColor = true;
@@ -87,27 +87,28 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-3, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(544, 365);
+            this.pictureBox1.Size = new System.Drawing.Size(612, 456);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
             // 
             // Log
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
-            this.ClientSize = new System.Drawing.Size(541, 362);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(604, 441);
             this.Controls.Add(this.buttonEnd);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.buttonDownload);
             this.Controls.Add(this.buttonOutputScreen);
+            this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(559, 409);
-            this.MinimumSize = new System.Drawing.Size(559, 409);
+            this.MaximumSize = new System.Drawing.Size(626, 497);
+            this.MinimumSize = new System.Drawing.Size(626, 497);
             this.Name = "Log";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OilCity";

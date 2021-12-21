@@ -304,7 +304,6 @@ namespace GasStation
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
             this.ClientSize = new System.Drawing.Size(582, 529);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.buttonContinuePayment);
             this.Controls.Add(this.labelSumma);
             this.Controls.Add(this.label7);
@@ -323,6 +322,7 @@ namespace GasStation
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MinimumSize = new System.Drawing.Size(599, 574);

@@ -14,7 +14,6 @@ namespace GasStation
             if (GasStation.Check == true)
             {
                 pictureBox4.Visible = true;
-                pictureBox4.SendToBack();
             }
         }
         double coffeePrice = 0, croissantPrice = 0, burgerPrice = 0, price1 = 0, price2 = 0, price3 = 0;

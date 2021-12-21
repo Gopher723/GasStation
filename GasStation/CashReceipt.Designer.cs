@@ -308,7 +308,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(73)))), ((int)(((byte)(103)))));
             this.ClientSize = new System.Drawing.Size(675, 620);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelAmountDiscount);
             this.Controls.Add(this.labelDiscount);
             this.Controls.Add(this.buttonDiscountCard);
@@ -329,6 +328,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximumSize = new System.Drawing.Size(697, 676);

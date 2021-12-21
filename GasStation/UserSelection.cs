@@ -55,7 +55,6 @@ namespace GasStation
             if (checkBox.Checked == true)
             {
                 pictureBox1.Visible = true;
-                pictureBox1.SendToBack();
                 GasStation.Check = true;
             }
             else

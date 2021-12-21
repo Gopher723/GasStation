@@ -15,7 +15,6 @@ namespace GasStation
             if (GasStation.Check == true)
             {
                 pictureBox7.Visible = true;
-                pictureBox7.SendToBack();
             }
         }
 
